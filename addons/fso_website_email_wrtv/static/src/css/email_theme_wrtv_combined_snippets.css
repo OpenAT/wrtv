@@ -1,0 +1,43 @@
+#combinedheadersnippet .snippet_block_text_image_left .flexibleContainerLeft,
+#combinedheadersnippet .snippet_block_text_image_left .flexibleContainerLeft .flexibleImage {
+    width: initial;
+    height: 80px;
+    padding: 5px;
+}
+#combinedheadersnippet .snippet_block_text_image_left .flexibleContainerRight,
+#combinedheadersnippet .snippet_block_text_image_left .flexibleContainerRight .flexibleImage {
+    width: auto;
+}
+#combinedheadersnippet .snippet_block_text_image_left .flexibleContainerLeft .flexibleImage,
+#combinedheadersnippet .snippet_block_text_image_left .flexibleContainerLeft .flexibleImage img {
+    height: 70px;
+    width: 84px;
+}
+#combinedheadersnippet .snippet_block_text_twocol .flexibleContainerLeft,
+#combinedheadersnippet .snippet_block_text_twocol .flexibleContainerLeft .flexibleImage img {
+    width: 82px;
+    height: 83px;
+}
+
+#combinedheadersnippet .snippet_block_text_twocol .flexibleContainerLeft,
+#combinedheadersnippet .snippet_block_text_twocol .flexibleContainerLeft .flexibleImage {
+    width: initial;
+    height: auto;
+}
+#combinedheadersnippet .snippet_block_text_twocol .flexibleContainerCell {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#combinedheadersnippet .flexibleContainerCell {
+    padding: 0px;
+
+}
+#combinedheadersnippet .snippet_block_text_image_left .flexibleContainerCell {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+    #combinedsnippetfooter #mediaicons img.flexibleImage {
+        display: initial;
+    }

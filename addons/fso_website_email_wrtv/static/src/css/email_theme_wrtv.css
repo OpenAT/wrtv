@@ -1,0 +1,167 @@
+/* ---- */
+/* MAIN */
+/* ---- */
+html, body, #bodyTable, #bodyCell {
+    background-color: #f6f6f5;
+}
+html body #wrapwrap {
+    margin-top: 0;
+}
+.headerCell {
+    font-size: 12px;
+}
+
+#open_in_browser {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*
+    ====
+    body
+    ====
+*/
+#bodyCell {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+
+/* ------------------------------- */
+/* wrtv SIZING FOR 650 PIXEL WIDTH */
+/* ------------------------------- */
+#emailBody {
+    width: 650px;
+}
+
+/* ---------- */
+/* Typography */
+/* ---------- */
+/* Workaround for Outlook  mso-special-format:bullet;  ul li, and ol and li*/
+body,
+p,
+a,
+#emailBody ul li,
+#emailBody ol li {
+    /*font-family: 'PT Sans', 'Trebuchet MS', sans-serif;*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #333333;
+}
+
+
+/* ATTENTION: Do not add line-height to "td", "div" or "span" elements to support Outlook 2013 and alike */
+p {
+    line-height: 1.5em;
+}
+div, span, td {
+    font-size: inherit;
+}
+
+p {
+    /* Top */
+    margin-top: 0;
+    -webkit-margin-before: inherit;
+    /* Bottom */
+    margin-bottom: 0;
+    -webkit-margin-after: inherit;
+    padding-bottom: 0.25em;
+    /* Just reset */
+    -webkit-margin-start: inherit;
+    -webkit-margin-end: inherit;
+}
+/* Links */
+a,
+a:visited {
+    color: #F19130;
+    text-decoration: underline;
+}
+
+/* Headlines */
+.h1, .h2, .h3,
+h1, h2, h3 {
+    margin-top: 0;
+}
+.h1, .h2, .h3, .h4, .h5, .h6,
+h1, h2, h3, h4, h5, h6 {
+    /*font-family: 'PT Sans', 'Trebuchet MS', sans-serif;*/
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 140%;
+    color: #dd710f;
+
+    /* Top */
+    margin-top: 0;
+    -webkit-margin-before: inherit;
+
+    /* Bottom */
+    margin-bottom: 0;
+    -webkit-margin-after: inherit;
+    padding-bottom: 0.25em;
+
+    /* Just reset */
+    -webkit-margin-start: inherit;
+    -webkit-margin-end: inherit;
+}
+.h1, h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: white;
+}
+.h2, h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+}
+.h3, h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #dd710f;
+}
+.h4, h4 {
+    font-size: 18px;
+    font-weight: 300;
+}
+.h5, h5 {
+    font-size: 16px;
+    font-weight: 300;
+}
+.h6, h6 {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+blockquote {
+    padding: 11px 22px;
+    margin: 0 0 22px;
+    font-size: 20px;
+    border-left: 5px solid #736664;
+}
+
+p.wrtv_small {
+    font-size: 14px;
+}
+p.fakebutton {
+    font-size: 18px;
+    padding: 4px;
+    background-color: #dd710f;
+    color: white;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 5px;
+}
+p.fakebutton a,
+p.fakebutton a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+p.wrtv_tiny {
+    font-size: 10px;
+}
+
+.wrtv_red {
+    color: #dd710f;
+}
+

@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+
+        <!-- INHERIT AND EXTEND theme_default_snippets -->
+        <template id="email_theme_wrtv_snippets_overrides_prat2" inherit_id="fso_website_email.theme_framework_snippets"
+                  name="Email Theme wrtv Snippet overrides part2">
+
+            <xpath expr="//li[@id='snippet_menu_special']" position="after">
+                <li id="snippet_menu_combined_snippets_wrtv">
+                    <a href="#combined_snippets_wrtv" data-toggle="tab">Combined</a>
+                </li>
+            </xpath>
+
+            <!-- ======================= -->
+            <!--  wrtv COMBINED SNIPPETS -->
+            <!-- ======================= -->
+            <xpath expr="//div[@id='snippet_email_special']" position="after">
+                <div id="combined_snippets_wrtv" class="tab-pane fade">
+
+                    <!-- HEADER SNIPPET BLOCK ALLG -->
+                    <!-- =============== -->
+                    <div>
+                        <!-- Icon and name -->
+                        <div class="oe_snippet_thumbnail">
+                            <img class="oe_snippet_thumbnail_img"
+                                 src="/fso_website_email_wrtv/static/src/icons/header_snippet.jpg"/>
+                            <span class="oe_snippet_thumbnail_title">Header Snippet</span>
+                        </div>
+                        <div id="combinedheadersnippet" class="oe_snippet_body ckediting_disabled wrtv_bin">
+                            <div class="snippet_block ckediting_enabled snippet_block_text_image_left wrtv_sb_bg_grey">
+                                <table cellpadding="0" cellspacing="0" class="centeringTable">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="top">
+                                                <table border="0" cellpadding="0" cellspacing="0"
+                                                       class="flexibleContainer">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="center" class="flexibleContainerCell"
+                                                                valign="top">
+                                                                <table border="0" cellpadding="0" cellspacing="0"
+                                                                       class="nestedContainer">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td align="center"
+                                                                                class="nestedContainerCell"
+                                                                                valign="top">
+                                                                                <table border="0" cellpadding="0"
+                                                                                       cellspacing="0"
+                                                                                       class="contentTable">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td class="textContent">
+                                                                                                <table align="left"
+                                                                                                       border="0"
+                                                                                                       cellpadding="0"
+                                                                                                       cellspacing="0"
+                                                                                                       class="flexibleContainerLeft">
+                                                                                                    <tbody>
+                                                                                                        <tr>
+                                                                                                            <td align="left"
+                                                                                                                class="imageContent ckediting_enabled"
+                                                                                                                valign="top">
+                                                                                                                <img class="flexibleImage"
+                                                                                                                     src="/website/image/ir.attachment/215_05bc07a/datas"/>
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </tbody>
+                                                                                                </table>
+
+                                                                                                <table align="left" border="0"
+                                                                                                       cellpadding="0"
+                                                                                                       cellspacing="0"
+                                                                                                       class="flexibleContainerRight">
+                                                                                                    <tbody>
+                                                                                                        <tr>
+                                                                                                            <td class="textContent ckediting_enabled"
+                                                                                                                valign="middle">
+                                                                                                                <h3 style="padding-top: 25px; color: white;">
+                                                                                                                    Tierschutz-News
+                                                                                                                </h3>
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </tbody>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="snippet_block ckediting_enabled snippet_block_text_twocol">
+                                <table cellpadding="0" cellspacing="0" class="centeringTable">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="top">
+                                                <table border="0" cellpadding="0" cellspacing="0"
+                                                       class="flexibleContainer">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="center" class="flexibleContainerCell"
+                                                                valign="top">
+                                                                <table border="0" cellpadding="0" cellspacing="0"
+                                                                       class="nestedContainer">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td align="center"
+                                                                                class="nestedContainerCell"
+                                                                                valign="top">
+                                                                                <table border="0" cellpadding="0"
+                                                                                       cellspacing="0"
+                                                                                       class="contentTable">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td class="textContent">
+                                                                                                <table align="left"
+                                                                                                       border="0"
+                                                                                                       cellpadding="0"
+                                                                                                       cellspacing="0"
+                                                                                                       class="flexibleContainerLeft">
+                                                                                                    <tbody>
+                                                                                                        <tr>
+                                                                                                            <td align="center"
+                                                                                                                class="textContent ckediting_enabled"
+                                                                                                                valign="top">
+                                                                                                                <img class="flexibleImage"
+                                                                                                                     src="/website/image/ir.attachment/213_9541f76/datas"/>
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </tbody>
+                                                                                                </table>
+
+                                                                                                <table align="right"
+                                                                                                       border="0"
+                                                                                                       cellpadding="0"
+                                                                                                       cellspacing="0"
+                                                                                                       class="flexibleContainerRight">
+                                                                                                    <tbody>
+                                                                                                        <tr>
+                                                                                                            <td align="center"
+                                                                                                                class="textContent ckediting_enabled"
+                                                                                                                valign="top">
+                                                                                                                <img class="flexibleImage"
+                                                                                                                     src="/website/image/ir.attachment/214_86b676f/datas"/>
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </tbody>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="snippet_block ckediting_enabled snippet_block_text_intro">
+                                <table cellpadding="0" cellspacing="0" class="centeringTable">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="top">
+                                                <table border="0" cellpadding="0" cellspacing="0"
+                                                       class="flexibleContainer">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="center" class="flexibleContainerCell"
+                                                                valign="top">
+                                                                <table border="0" cellpadding="0" cellspacing="0"
+                                                                       class="nestedContainer">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td align="center"
+                                                                                class="nestedContainerCell"
+                                                                                valign="top">
+                                                                                <table border="0" cellpadding="0"
+                                                                                       cellspacing="0"
+                                                                                       class="contentTable">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td class="textContent ckediting_enabled">
+                                                                                                <h1>
+                                                                                                    <span style="color:#dd710f;">
+                                                                                                        Wiener
+                                                                                                        Tierschutzverein
+                                                                                                    </span>
+                                                                                                </h1>
+
+                                                                                                <p>
+                                                                                                    <span style="color:#dd710f;">
+                                                                                                        Die Stimme der
+                                                                                                        Tier.
+                                                                                                        Das
+                                                                                                        Original seit
+                                                                                                        1846.
+                                                                                                    </span>
+                                                                                                </p>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FOOTER SNIPPET BLOCK -->
+                    <!-- =============== -->
+                    <div>
+                        <!-- Icon and name -->
+                        <div class="oe_snippet_thumbnail">
+                            <img class="oe_snippet_thumbnail_img"
+                                 src="/fso_website_email_rnde/static/src/icons/footer_snippet.jpg"/>
+                            <span class="oe_snippet_thumbnail_title">Footer Snippet</span>
+                        </div>
+                        <div id="combinedsnippetfooter" class="oe_snippet_body ckediting_disabled wrtv_bin">
+
+                            <div class="ckediting_enabled snippet_block snippet_block_text_intro wrtv_sb_bg_red">
+                                <table cellpadding="0" cellspacing="0" class="centeringTable">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="top">
+                                                <table border="0" cellpadding="0" cellspacing="0"
+                                                       class="flexibleContainer">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="center" class="flexibleContainerCell"
+                                                                valign="top">
+                                                                <table border="0" cellpadding="0" cellspacing="0"
+                                                                       class="nestedContainer">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td align="center"
+                                                                                class="nestedContainerCell"
+                                                                                valign="top">
+                                                                                <table border="0" cellpadding="0"
+                                                                                       cellspacing="0"
+                                                                                       class="contentTable">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td class="textContent ckediting_enabled">
+                                                                                                <h2>Wiener
+                                                                                                    Tierschutzverein
+                                                                                                </h2>
+
+                                                                                                <p>
+                                                                                                    <span style="color:#ffffff;">
+                                                                                                        Die Stimmer der
+                                                                                                        Tiere.
+                                                                                                        Das Originial
+                                                                                                        seit 1846.
+                                                                                                    </span>
+                                                                                                </p>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div id="mediaicons" class="ckediting_enabled snippet_block snippet_block_text_threecol wrtv_sb_bg_yellow">
+                                <table cellpadding="0" cellspacing="0" class="centeringTable">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="top">
+                                                <table border="0" cellpadding="0" cellspacing="0"
+                                                       class="flexibleContainer">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="center" class="flexibleContainerCell"
+                                                                valign="top">
+                                                                <table border="0" cellpadding="0" cellspacing="0"
+                                                                       class="nestedContainer">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td align="center"
+                                                                                class="nestedContainerCell"
+                                                                                valign="top">
+                                                                                <table border="0" cellpadding="0"
+                                                                                       cellspacing="0"
+                                                                                       class="contentTable">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td class="textContent">
+                                                                                                <table align="left"
+                                                                                                       border="0"
+                                                                                                       cellpadding="0"
+                                                                                                       cellspacing="0"
+                                                                                                       class="flexibleContainer33 flexibleContainer33left">
+                                                                                                    <tbody>
+                                                                                                        <tr>
+                                                                                                            <td align="center"
+                                                                                                                class="textContent ckediting_enabled"
+                                                                                                                style="text-align:center;"
+                                                                                                                valign="top">
+                                                                                                                <a href="https://www.facebook.com/wienertierschutzverein/" target="_blank">
+                                                                                                                <img class="flexibleImage mediaicon"
+                                                                                                                     src="/fso_website_email_wrtv/static/src/icons/facebook_ws.png"
+                                                                                                                     style="text-align:center; width:32px; height:32px;"/></a>
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </tbody>
+                                                                                                </table>
+
+                                                                                                <table align="left"
+                                                                                                       border="0"
+                                                                                                       cellpadding="0"
+                                                                                                       cellspacing="0"
+                                                                                                       class="flexibleContainer33 flexibleContainer33middle">
+                                                                                                    <tbody>
+                                                                                                        <tr>
+                                                                                                            <td align="center"
+                                                                                                                class="textContent ckediting_enabled"
+                                                                                                                style="text-align:center;"
+                                                                                                                valign="top">
+                                                                                                                <a href="https://twitter.com/hashtag/WienerTierschutzverein" target="_blank">
+                                                                                                                <img class="flexibleImage mediaicon"
+                                                                                                                     src="/fso_website_email_wrtv/static/src/icons/twitter_ws.png"
+                                                                                                                     style="text-align:center; width:32px; height:32px;"/></a>
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </tbody>
+                                                                                                </table>
+
+                                                                                                <table align="left"
+                                                                                                       border="0"
+                                                                                                       cellpadding="0"
+                                                                                                       cellspacing="0"
+                                                                                                       class="flexibleContainer33 flexibleContainer33right">
+                                                                                                    <tbody>
+                                                                                                        <tr>
+                                                                                                            <td align="center"
+                                                                                                                class="textContent ckediting_enabled"
+                                                                                                                style="text-align:center;"
+                                                                                                                valign="top">
+                                                                                                                <a href="https://www.instagram.com/wienertierschutzverein" target="_blank">
+                                                                                                                <img class="flexibleImage mediaicon"
+                                                                                                                     src="/fso_website_email_wrtv/static/src/icons/instagram_ws.png"
+                                                                                                                     style="text-align:center; width:32px; height:32px;"/></a>
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </tbody>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div id="footerend" class="ckediting_disabled snippet_block snippet_block_text_intro">
+                                <table cellpadding="0" cellspacing="0" class="centeringTable">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="top">
+                                                <table border="0" cellpadding="0" cellspacing="0"
+                                                       class="flexibleContainer">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="center" class="flexibleContainerCell"
+                                                                valign="top">
+                                                                <table border="0" cellpadding="0" cellspacing="0"
+                                                                       class="nestedContainer">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td align="center"
+                                                                                class="nestedContainerCell"
+                                                                                valign="top">
+                                                                                <table border="0" cellpadding="0"
+                                                                                       cellspacing="0"
+                                                                                       class="contentTable">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td class="textContent ckediting_enabled">
+                                                                                                <p style="text-align: center;">
+                                                                                                    <span style="color: rgb(51, 51, 51); font-size: 16px; background-color: transparent; text-align: center;">
+                                                                                                        Wiener
+                                                                                                        Tierschutzverein
+                                                                                                    </span>
+                                                                                                </p>
+
+                                                                                                <p style="text-align: center;">
+                                                                                                    Triester Straße 8,
+                                                                                                    2331
+                                                                                                    Vösendorf
+                                                                                                    <br>
+                                                                                                        Tel: +43 1 699
+                                                                                                        24 50 |
+                                                                                                        Fax: +43 1 699
+                                                                                                        24 50 -
+                                                                                                        98
+                                                                                                    </br>
+                                                                                                    E-Mail:
+                                                                                                    office@wiener-tierschutzverein.org
+                                                                                                    |
+                                                                                                    www.wiener-tierschutzverein.org
+                                                                                                    <br>
+                                                                                                        © 2019 Wiener
+                                                                                                        Tierschutzverein
+                                                                                                        -
+                                                                                                        Newsletter
+                                                                                                        abmelden
+                                                                                                    </br>
+                                                                                                    a concedis
+                                                                                                    Newsletter
+                                                                                                </p>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+
+
+    </data>
+</openerp>
