@@ -64,7 +64,7 @@
                                                                                                                 class="imageContent ckediting_enabled"
                                                                                                                 valign="top">
                                                                                                                 <img class="flexibleImage"
-                                                                                                                     src="/website/image/ir.attachment/215_05bc07a/datas"/>
+                                                                                                                     src="/fso_website_email_wrtv/static/src/icons/hund_auf_buch.png"/>
                                                                                                             </td>
                                                                                                         </tr>
                                                                                                     </tbody>
@@ -138,7 +138,7 @@
                                                                                                                 class="textContent ckediting_enabled"
                                                                                                                 valign="top">
                                                                                                                 <img class="flexibleImage"
-                                                                                                                     src="/website/image/ir.attachment/213_9541f76/datas"/>
+                                                                                                                     src="/fso_website_email_wrtv/static/src/icons/wtv_logo_kl_tr.png"/>
                                                                                                             </td>
                                                                                                         </tr>
                                                                                                     </tbody>
@@ -155,7 +155,7 @@
                                                                                                                 class="textContent ckediting_enabled"
                                                                                                                 valign="top">
                                                                                                                 <img class="flexibleImage"
-                                                                                                                     src="/website/image/ir.attachment/214_86b676f/datas"/>
+                                                                                                                     src="/fso_website_email_wrtv/static/src/icons/hund.png"/>
                                                                                                             </td>
                                                                                                         </tr>
                                                                                                     </tbody>
@@ -244,7 +244,7 @@
                         <!-- Icon and name -->
                         <div class="oe_snippet_thumbnail">
                             <img class="oe_snippet_thumbnail_img"
-                                 src="/fso_website_email_rnde/static/src/icons/footer_snippet.jpg"/>
+                                 src="/fso_website_email_wrtv/static/src/icons/footer_snippet.jpg"/>
                             <span class="oe_snippet_thumbnail_title">Footer Snippet</span>
                         </div>
                         <div id="combinedsnippetfooter" class="oe_snippet_body ckediting_disabled wrtv_bin">

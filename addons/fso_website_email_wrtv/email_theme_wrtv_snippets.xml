@@ -182,7 +182,25 @@
                     </ul>
                 </li>
             </div>
-            
+
+            <div data-snippet-option-id='wrtv_image_style_special'
+                 data-selector=".snippet_block_text_image_left,
+                                .snippet_block_text_image_right,
+                                .snippet_block_text_threecol">
+                <!-- drop_in options menu -->
+                <li class="dropdown-submenu" data-required="true">
+                    <a tabindex="-1" href="#">WRTV special style</a>
+                    <ul class="dropdown-menu">
+                        <li data-value=''>
+                            <a>Default</a>
+                        </li>
+                        <li data-value='wrtv_circle_image'>
+                            <a>Border Kreis Weis</a>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+
             <div data-snippet-option-id='wrtv_image_styles'
                  data-selector=".snippet_block_text_image_left">
                 <!-- drop_in options menu -->
