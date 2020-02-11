@@ -202,7 +202,7 @@
                                                                                     <tbody>
                                                                                         <tr>
                                                                                             <td class="textContent ckediting_enabled">
-                                                                                                <h1>
+                                                                                                <h1 style="padding-bottom: 0; line-height: 120%;">
                                                                                                     <span style="color:#dd710f;">
                                                                                                         Wiener
                                                                                                         Tierschutzverein
@@ -273,7 +273,7 @@
                                                                                     <tbody>
                                                                                         <tr>
                                                                                             <td class="textContent ckediting_enabled">
-                                                                                                <h2>Wiener
+                                                                                                <h2 style="color:#ffffff;">Wiener
                                                                                                     Tierschutzverein
                                                                                                 </h2>
 
@@ -358,9 +358,9 @@
                                                                                                                 class="textContent ckediting_enabled"
                                                                                                                 style="text-align:center;"
                                                                                                                 valign="top">
-                                                                                                                <a href="https://twitter.com/hashtag/WienerTierschutzverein" target="_blank">
+                                                                                                                <a href="https://www.wiener-tierschutzverein.org" target="_blank">
                                                                                                                 <img class="flexibleImage mediaicon"
-                                                                                                                     src="/fso_website_email_wrtv/static/src/icons/twitter_ws.png"
+                                                                                                                     src="/fso_website_email_wrtv/static/src/icons/wtv_logo_kl_tr.png"
                                                                                                                      style="text-align:center; width:32px; height:32px;"/></a>
                                                                                                             </td>
                                                                                                         </tr>
@@ -380,7 +380,7 @@
                                                                                                                 valign="top">
                                                                                                                 <a href="https://www.instagram.com/wienertierschutzverein" target="_blank">
                                                                                                                 <img class="flexibleImage mediaicon"
-                                                                                                                     src="/fso_website_email_wrtv/static/src/icons/instagram_ws.png"
+                                                                                                                     src="/fso_website_email_wrtv/static/src/icons/instagram_logo_May2016_orange.png"
                                                                                                                      style="text-align:center; width:32px; height:32px;"/></a>
                                                                                                             </td>
                                                                                                         </tr>
@@ -446,19 +446,16 @@
                                                                                                         24 50 -
                                                                                                         98
                                                                                                     </br>
-                                                                                                    E-Mail:
-                                                                                                    office@wiener-tierschutzverein.org
+                                                                                                    <a href="mailto:office@wiener-tierschutzverein.org">
+                                                                                                        office@wiener-tierschutzverein.org</a>
                                                                                                     |
-                                                                                                    www.wiener-tierschutzverein.org
+                                                                                                    <a href="https://wiener-tierschutzverein.org" target="_blank">www.wiener-tierschutzverein.org</a>
                                                                                                     <br>
-                                                                                                        © 2019 Wiener
+                                                                                                        © 2020 Wiener
                                                                                                         Tierschutzverein
                                                                                                         -
-                                                                                                        Newsletter
-                                                                                                        abmelden
+                                                                                                        <a style="color: grey;" href="https://wiener-tierschutzverein.org/newsletterabmeldung" target="_blank">Newsletter abmelden</a>
                                                                                                     </br>
-                                                                                                    a concedis
-                                                                                                    Newsletter
                                                                                                 </p>
                                                                                             </td>
                                                                                         </tr>
