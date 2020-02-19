@@ -178,7 +178,7 @@
                                 </table>
                             </div>
 
-                            <div class="snippet_block ckediting_enabled snippet_block_text_intro">
+                            <div class="snippet_block ckediting_enabled snippet_block_text_intro dadi_sb_fg_normal">
                                 <table cellpadding="0" cellspacing="0" class="centeringTable">
                                     <tbody>
                                         <tr>
@@ -202,7 +202,7 @@
                                                                                     <tbody>
                                                                                         <tr>
                                                                                             <td class="textContent ckediting_enabled">
-                                                                                                <h1 style="padding-bottom: 0; line-height: 120%;">
+                                                                                                <h1 style="padding-bottom: 0; font-size:36px; line-height: 120%;">
                                                                                                     <span style="color:#dd710f;">
                                                                                                         Wiener
                                                                                                         Tierschutzverein
@@ -446,15 +446,15 @@
                                                                                                         24 50 -
                                                                                                         98
                                                                                                     </br>
-                                                                                                    <a href="mailto:office@wiener-tierschutzverein.org">
-                                                                                                        office@wiener-tierschutzverein.org</a>
+                                                                                                    <a href="https://www.wiener-tierschutzverein.org/de/datenschutz/">
+                                                                                                        Datenschutz</a>
                                                                                                     |
                                                                                                     <a href="https://wiener-tierschutzverein.org" target="_blank">www.wiener-tierschutzverein.org</a>
                                                                                                     <br>
                                                                                                         © 2020 Wiener
                                                                                                         Tierschutzverein
                                                                                                         -
-                                                                                                        <a style="color: grey;" href="https://wiener-tierschutzverein.org/newsletterabmeldung" target="_blank">Newsletter abmelden</a>
+                                                                                                        <a style="color: grey;" href="https://www.wiener-tierschutzverein.org/de/newsletter-abmelden/" target="_blank">Newsletter abmelden</a>
                                                                                                     </br>
                                                                                                 </p>
                                                                                             </td>
