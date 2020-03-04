@@ -1,0 +1,60 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-07 10:52+0000\n"
+"PO-Revision-Date: 2016-06-07 10:52+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: partner_contact_gender
+#: selection:res.partner,gender:0
+msgid "Female"
+msgstr "Frau"
+
+#. module: partner_contact_gender
+#: field:res.partner,gender:0
+msgid "Gender"
+msgstr "Anrede"
+
+#. module: partner_contact_gender
+#: selection:res.partner,gender:0
+msgid "Male"
+msgstr "Herr"
+
+#. module: website_sale_donate
+#: model:product.payment_interval,name:website_sale_donate.once_only
+msgid "once-only"
+msgstr "einmalig"
+
+#. module: website_sale_donate
+#: model:product.payment_interval,name:website_sale_donate.annually
+msgid "annually"
+msgstr "jährlich"
+
+#. module: website_sale_donate
+#: model:product.payment_interval,name:website_sale_donate.monthly
+msgid "monthly"
+msgstr "monatlich"
+
+#. module: website_sale_donate
+#: model:product.payment_interval,name:website_sale_donate.half_yearly
+msgid "half-yearly"
+msgstr "halbjährlich"
+
+#. module: website_sale_donate
+#: model:product.payment_interval,name:website_sale_donate.quarterly
+msgid "quarterly"
+msgstr "vierteljährlich"
+
+#. module: website_sale_donate
+#: view:website:website_sale_donate.checkoutbox
+msgid "Donate Now!"
+msgstr "jetzt Spenden"

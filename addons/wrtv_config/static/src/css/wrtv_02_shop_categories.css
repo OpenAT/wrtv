@@ -1,0 +1,50 @@
+/* ------------------- */
+/* SHOP CATEGORY PAGES */
+/* ------------------- */
+
+/* Product GRID */
+/* ------------ */
+#products_grid .oe_product section {
+    background: #666666;
+    font-size: 20px;
+}
+#products_grid .oe_product section h5 {
+    font-size: 20px;
+}
+#products_grid .oe_product section a {
+    color: white;
+}
+#products_grid .product_price.text-primary {
+    color: white;
+}
+#products_grid .oe_product .oe_product_image img {
+    height: 100%;
+    max-height: initial;
+    width: auto;
+    max-width: initial;
+}
+
+/* TODO: Shop Grid Size for col md-12 and two products per row
+         You may need to remove the original css of website.sale becaues the media queries are different for rnde!
+*/
+body .col-md-12 .oe-height-2 {
+  height: 380px;
+}
+/* bis 400 px */
+@media (max-width: 400px) {
+    body #products_grid .oe_product section {
+        background: #f8f8f8;
+    }
+}
+/* ab 992px */
+@media (min-width: 992px) {
+    body .col-md-12 .oe-height-2 {
+        height: 380px;
+    }
+}
+/* ab 1200px */
+@media (min-width: 1200px) {
+    body .col-md-12 .oe-height-2 {
+        height: 380px;
+    }
+}

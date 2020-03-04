@@ -14,7 +14,7 @@ Customer configuration for the instance wrtv
 - CSS
 - Translations
     ''',
-    'author': 'Michael Karrer (michael.karrer@datadialog.net), DataDialog',
+    'author': 'Joachim Grubelnik (joachim.grubelnik@datadialog.net), DataDialog',
     'version': '1.0',
     'website': 'https://www.datadialog.net',
     'installable': True,
