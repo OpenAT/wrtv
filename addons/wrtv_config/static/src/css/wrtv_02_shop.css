@@ -159,7 +159,9 @@ div.checkout_steps_buttons {
 #payment_method .nav-tabs > li.active > a:focus {
     color: white;
 }
-
+.payment_interval_ids.payment_interval_lines_ids {
+    color: #000;
+}
 
 /* ---------------- */
 /* ACQUIRER BUTTONS */

@@ -31,10 +31,13 @@ body #wrapwrap footer {
     color: #66666;
 }
 .navbar-default .navbar-nav > li > a:hover {
-    color: #8c8c8c;
+    color: #fff;
 }
 .dropdown-menu > li > a {
     color: white;
+}
+.dropdown-menu {
+    background-color: #736664;
 }
 .dropdown-menu > li > a:hover {
     color: white;

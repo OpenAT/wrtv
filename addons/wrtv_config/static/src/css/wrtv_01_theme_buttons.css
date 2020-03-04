@@ -24,6 +24,13 @@
     top: 3px;
 }
 
+.btn {
+    text-shadow: none;
+}
+.dropdown-menu > li > a:hover {
+    background-color: #dd710f;
+}
 .btn.btn-primary {
-    background-color: #8f8f8f
+    background-color: #dd710f;
+    border-color: #dd710f;
 }

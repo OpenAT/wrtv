@@ -319,6 +319,17 @@ fieldset[disabled] .btn-danger.active {
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
+  background-image: -webkit-linear-gradient(top, #dd710f 0%, #c5650d 100%);
+  background-image: -o-linear-gradient(top, #dd710f 0%, #c5650d 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dd710f), to(#c5650d));
+  background-image: linear-gradient(to bottom, #dd710f 0%, #c5650d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdd710f', endColorstr='#ffc5650d', GradientType=0);
+  background-repeat: repeat-x;
+  background-color: #c5650d;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
   background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0) 100%);
   background-image: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0) 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0)));
@@ -326,17 +337,6 @@ fieldset[disabled] .btn-danger.active {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#00000000', GradientType=0);
   background-repeat: repeat-x;
   background-color: rgba(0, 0, 0, 0);
-}
-.dropdown-menu > .active > a,
-.dropdown-menu > .active > a:hover,
-.dropdown-menu > .active > a:focus {
-  background-image: -webkit-linear-gradient(top, #8c8c8c 0%, #7f7f7f 100%);
-  background-image: -o-linear-gradient(top, #8c8c8c 0%, #7f7f7f 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#8c8c8c), to(#7f7f7f));
-  background-image: linear-gradient(to bottom, #8c8c8c 0%, #7f7f7f 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8c8c8c', endColorstr='#ff7f7f7f', GradientType=0);
-  background-repeat: repeat-x;
-  background-color: #7f7f7f;
 }
 .navbar-default {
   background-image: -webkit-linear-gradient(top, #8e7f7c 0%, #736664 100%);
@@ -400,11 +400,11 @@ fieldset[disabled] .btn-danger.active {
   .navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #fff;
-    background-image: -webkit-linear-gradient(top, #8c8c8c 0%, #7f7f7f 100%);
-    background-image: -o-linear-gradient(top, #8c8c8c 0%, #7f7f7f 100%);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#8c8c8c), to(#7f7f7f));
-    background-image: linear-gradient(to bottom, #8c8c8c 0%, #7f7f7f 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8c8c8c', endColorstr='#ff7f7f7f', GradientType=0);
+    background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0)));
+    background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#00000000', GradientType=0);
     background-repeat: repeat-x;
   }
 }

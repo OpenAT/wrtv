@@ -31,7 +31,7 @@
             <!--<link rel='stylesheet' href='/wrtv_config/static/src/css/bootstrap_wrtv/css/bootstrap-theme.min.css' t-ignore="true"/> -->
             <!--<link rel='stylesheet' href='/wrtv_config/static/src/css/wrtv.css' t-ignore="true"/>-->
             <!--<script type="text/javascript" src="/wrtv_config/static/src/js/textreplace.js"/>-->
-
+            <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Sans" t-ignore="true"/>
             <!-- BY MIKE -->
             <link rel='stylesheet' href='/wrtv_config/static/src/css/wrtv_bootstrap/css/bootstrap.css' t-ignore="true"/>
             <link rel='stylesheet' href='/wrtv_config/static/src/css/wrtv_bootstrap/css/bootstrap-theme.css' t-ignore="true"/>

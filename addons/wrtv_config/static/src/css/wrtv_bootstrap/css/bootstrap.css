@@ -1085,7 +1085,7 @@ html {
 body {
   font-family: Droid Sans, sans-serif;
   font-size: 16px;
-  line-height: 1.4em;
+  line-height: 1.4;
   color: #000000;
   background-color: #ffffff;
 }
@@ -1130,7 +1130,7 @@ img {
 }
 .img-thumbnail {
   padding: 4px;
-  line-height: 1.4em;
+  line-height: 1.4;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   border-radius: 0px;
@@ -1145,8 +1145,8 @@ img {
   border-radius: 50%;
 }
 hr {
-  margin-top: 22em;
-  margin-bottom: 22em;
+  margin-top: 22px;
+  margin-bottom: 22px;
   border: 0;
   border-top: 1px solid #eeeeee;
 }
@@ -1223,8 +1223,8 @@ h2,
 .h2,
 h3,
 .h3 {
-  margin-top: 22em;
-  margin-bottom: 11em;
+  margin-top: 22px;
+  margin-bottom: 11px;
 }
 h1 small,
 .h1 small,
@@ -1246,8 +1246,8 @@ h5,
 .h5,
 h6,
 .h6 {
-  margin-top: 11em;
-  margin-bottom: 11em;
+  margin-top: 11px;
+  margin-bottom: 11px;
 }
 h4 small,
 .h4 small,
@@ -1288,10 +1288,10 @@ h6,
   font-size: 14px;
 }
 p {
-  margin: 0 0 11em;
+  margin: 0 0 11px;
 }
 .lead {
-  margin-bottom: 22em;
+  margin-bottom: 22px;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.4;
@@ -1409,14 +1409,14 @@ a.bg-danger:focus {
   background-color: #e4b9b9;
 }
 .page-header {
-  padding-bottom: 10em;
-  margin: 44em 0 22em;
+  padding-bottom: 10px;
+  margin: 44px 0 22px;
   border-bottom: 1px solid #eeeeee;
 }
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 11em;
+  margin-bottom: 11px;
 }
 ul ul,
 ol ul,
@@ -1440,11 +1440,11 @@ ol ol {
 }
 dl {
   margin-top: 0;
-  margin-bottom: 22em;
+  margin-bottom: 22px;
 }
 dt,
 dd {
-  line-height: 1.4em;
+  line-height: 1.4;
 }
 dt {
   font-weight: 700;
@@ -1475,8 +1475,8 @@ abbr[data-original-title] {
   text-transform: uppercase;
 }
 blockquote {
-  padding: 11em 22em;
-  margin: 0 0 22em;
+  padding: 11px 22px;
+  margin: 0 0 22px;
   font-size: 20px;
   border-left: 5px solid #eeeeee;
 }
@@ -1490,7 +1490,7 @@ blockquote small,
 blockquote .small {
   display: block;
   font-size: 80%;
-  line-height: 1.4em;
+  line-height: 1.4;
   color: #777777;
 }
 blockquote footer:before,
@@ -1523,9 +1523,9 @@ blockquote.pull-right .small:after {
   content: "\00A0 \2014";
 }
 address {
-  margin-bottom: 22em;
+  margin-bottom: 22px;
   font-style: normal;
-  line-height: 1.4em;
+  line-height: 1.4;
 }
 code,
 kbd,
@@ -1558,10 +1558,10 @@ kbd kbd {
 }
 pre {
   display: block;
-  padding: 10.5em;
-  margin: 0 0 11em;
+  padding: 10.5px;
+  margin: 0 0 11px;
   font-size: 15px;
-  line-height: 1.4em;
+  line-height: 1.4;
   color: #333333;
   word-break: break-all;
   word-wrap: break-word;
@@ -2282,7 +2282,7 @@ th {
 .table {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 22em;
+  margin-bottom: 22px;
 }
 .table > thead > tr > th,
 .table > tbody > tr > th,
@@ -2291,7 +2291,7 @@ th {
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
   padding: 8px;
-  line-height: 1.4em;
+  line-height: 1.4;
   vertical-align: top;
   border-top: 1px solid #dddddd;
 }
@@ -2454,7 +2454,7 @@ th {
 @media screen and (max-width: 767px) {
   .table-responsive {
     width: 100%;
-    margin-bottom: 16.5em;
+    margin-bottom: 16.5px;
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     border: 1px solid #dddddd;
@@ -2506,7 +2506,7 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 22em;
+  margin-bottom: 22px;
   font-size: 24px;
   line-height: inherit;
   color: #333333;
@@ -2561,16 +2561,16 @@ output {
   display: block;
   padding-top: 7px;
   font-size: 16px;
-  line-height: 1.4em;
+  line-height: 1.4;
   color: #736664;
 }
 .form-control {
   display: block;
   width: 100%;
-  height: 36em;
+  height: 36px;
   padding: 6px 12px;
   font-size: 16px;
-  line-height: 1.4em;
+  line-height: 1.4;
   color: #736664;
   background-color: #ffffff;
   background-image: none;
@@ -2620,7 +2620,7 @@ textarea.form-control {
   input[type="time"].form-control,
   input[type="datetime-local"].form-control,
   input[type="month"].form-control {
-    line-height: 36em;
+    line-height: 36px;
   }
   input[type="date"].input-sm,
   input[type="time"].input-sm,
@@ -2661,7 +2661,7 @@ fieldset[disabled] .checkbox label {
 }
 .radio label,
 .checkbox label {
-  min-height: 22em;
+  min-height: 22px;
   padding-left: 20px;
   margin-bottom: 0;
   font-weight: 400;
@@ -2701,7 +2701,7 @@ fieldset[disabled] .checkbox-inline {
   margin-left: 10px;
 }
 .form-control-static {
-  min-height: 38em;
+  min-height: 38px;
   padding-top: 7px;
   padding-bottom: 7px;
   margin-bottom: 0;
@@ -2743,7 +2743,7 @@ select[multiple].input-sm {
 }
 .form-group-sm .form-control-static {
   height: 33px;
-  min-height: 36em;
+  min-height: 36px;
   padding: 6px 10px;
   font-size: 14px;
   line-height: 1.5;
@@ -2780,7 +2780,7 @@ select[multiple].input-lg {
 }
 .form-group-lg .form-control-static {
   height: 53px;
-  min-height: 45em;
+  min-height: 45px;
   padding: 11px 16px;
   font-size: 23px;
   line-height: 1.3333333;
@@ -2789,7 +2789,7 @@ select[multiple].input-lg {
   position: relative;
 }
 .has-feedback .form-control {
-  padding-right: 45em;
+  padding-right: 45px;
 }
 .form-control-feedback {
   position: absolute;
@@ -2797,9 +2797,9 @@ select[multiple].input-lg {
   right: 0;
   z-index: 2;
   display: block;
-  width: 36em;
-  height: 36em;
-  line-height: 36em;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
   text-align: center;
   pointer-events: none;
 }
@@ -2908,7 +2908,7 @@ select[multiple].input-lg {
   color: #a94442;
 }
 .has-feedback label ~ .form-control-feedback {
-  top: 27em;
+  top: 27px;
 }
 .has-feedback label.sr-only ~ .form-control-feedback {
   top: 0;
@@ -2979,7 +2979,7 @@ select[multiple].input-lg {
 }
 .form-horizontal .radio,
 .form-horizontal .checkbox {
-  min-height: 29em;
+  min-height: 29px;
 }
 .form-horizontal .form-group {
   margin-right: -15px;
@@ -3021,7 +3021,7 @@ select[multiple].input-lg {
   border: 1px solid transparent;
   padding: 6px 12px;
   font-size: 16px;
-  line-height: 1.4em;
+  line-height: 1.4;
   border-radius: 0px;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -3040,7 +3040,7 @@ select[multiple].input-lg {
 .btn:hover,
 .btn:focus,
 .btn.focus {
-  color: #dd710f;
+  color: #ffffff;
   text-decoration: none;
 }
 .btn:active,
@@ -3064,25 +3064,25 @@ fieldset[disabled] a.btn {
   pointer-events: none;
 }
 .btn-default {
-  color: #dd710f;
+  color: #ffffff;
   background-color: #dd710f;
   border-color: #dd710f;
 }
 .btn-default:focus,
 .btn-default.focus {
-  color: #dd710f;
+  color: #ffffff;
   background-color: #ad590c;
   border-color: #663407;
 }
 .btn-default:hover {
-  color: #dd710f;
+  color: #ffffff;
   background-color: #ad590c;
   border-color: #a4540b;
 }
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  color: #dd710f;
+  color: #ffffff;
   background-color: #ad590c;
   background-image: none;
   border-color: #a4540b;
@@ -3096,7 +3096,7 @@ fieldset[disabled] a.btn {
 .btn-default:active.focus,
 .btn-default.active.focus,
 .open > .dropdown-toggle.btn-default.focus {
-  color: #dd710f;
+  color: #ffffff;
   background-color: #8c4709;
   border-color: #663407;
 }
@@ -3114,7 +3114,7 @@ fieldset[disabled] .btn-default.focus {
 }
 .btn-default .badge {
   color: #dd710f;
-  background-color: #dd710f;
+  background-color: #ffffff;
 }
 .btn-primary {
   color: #ffffff;
@@ -3528,7 +3528,7 @@ tbody.collapse.in {
 }
 .dropdown-menu .divider {
   height: 1px;
-  margin: 10em 0;
+  margin: 10px 0;
   overflow: hidden;
   background-color: #ffffff;
 }
@@ -3537,7 +3537,7 @@ tbody.collapse.in {
   padding: 3px 20px;
   clear: both;
   font-weight: 400;
-  line-height: 1.4em;
+  line-height: 1.4;
   color: #ffffff;
   white-space: nowrap;
 }
@@ -3545,14 +3545,14 @@ tbody.collapse.in {
 .dropdown-menu > li > a:focus {
   color: #ffffff;
   text-decoration: none;
-  background-color: transparent;
+  background-color: #dd710f;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
   color: #ffffff;
   text-decoration: none;
-  background-color: #8c8c8c;
+  background-color: transparent;
   outline: 0;
 }
 .dropdown-menu > .disabled > a,
@@ -3586,7 +3586,7 @@ tbody.collapse.in {
   display: block;
   padding: 3px 20px;
   font-size: 14px;
-  line-height: 1.4em;
+  line-height: 1.4;
   color: #777777;
   white-space: nowrap;
 }
@@ -3991,7 +3991,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav .nav-divider {
   height: 1px;
-  margin: 10em 0;
+  margin: 10px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -4007,7 +4007,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav-tabs > li > a {
   margin-right: 2px;
-  line-height: 1.4em;
+  line-height: 1.4;
   border: 1px solid transparent;
   border-radius: 0px 0px 0 0;
 }
@@ -4149,7 +4149,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 22em;
+  margin-bottom: 22px;
   border: 1px solid transparent;
 }
 @media (min-width: 768px) {
@@ -4259,7 +4259,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   height: 50px;
   padding: 14px 15px;
   font-size: 23px;
-  line-height: 22em;
+  line-height: 22px;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -4309,7 +4309,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 22em;
+  line-height: 22px;
 }
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
@@ -4327,7 +4327,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     padding: 5px 15px 5px 25px;
   }
   .navbar-nav .open .dropdown-menu > li > a {
-    line-height: 22em;
+    line-height: 22px;
   }
   .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -4675,7 +4675,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 .breadcrumb {
   padding: 8px 15px;
-  margin-bottom: 22em;
+  margin-bottom: 22px;
   list-style: none;
   background-color: #666666;
   border-radius: 0px;
@@ -4694,7 +4694,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination {
   display: inline-block;
   padding-left: 0;
-  margin: 22em 0;
+  margin: 22px 0;
   border-radius: 0px;
 }
 .pagination > li {
@@ -4706,7 +4706,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   float: left;
   padding: 6px 12px;
   margin-left: -1px;
-  line-height: 1.4em;
+  line-height: 1.4;
   color: #ffffff;
   text-decoration: none;
   background-color: #666666;
@@ -4789,7 +4789,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 .pager {
   padding-left: 0;
-  margin: 22em 0;
+  margin: 22px 0;
   text-align: center;
   list-style: none;
 }
@@ -4984,8 +4984,8 @@ a.badge:focus {
 .thumbnail {
   display: block;
   padding: 4px;
-  margin-bottom: 22em;
-  line-height: 1.4em;
+  margin-bottom: 22px;
+  line-height: 1.4;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   border-radius: 0px;
@@ -5009,7 +5009,7 @@ a.thumbnail.active {
 }
 .alert {
   padding: 15px;
-  margin-bottom: 22em;
+  margin-bottom: 22px;
   border: 1px solid transparent;
   border-radius: 0px;
 }
@@ -5107,8 +5107,8 @@ a.thumbnail.active {
   }
 }
 .progress {
-  height: 22em;
-  margin-bottom: 22em;
+  height: 22px;
+  margin-bottom: 22px;
   overflow: hidden;
   background-color: #f5f5f5;
   border-radius: 0px;
@@ -5120,7 +5120,7 @@ a.thumbnail.active {
   width: 0%;
   height: 100%;
   font-size: 14px;
-  line-height: 22em;
+  line-height: 22px;
   color: #ffffff;
   text-align: center;
   background-color: #337ab7;
@@ -5431,7 +5431,7 @@ button.list-group-item-danger.active:focus {
   line-height: 1.3;
 }
 .panel {
-  margin-bottom: 22em;
+  margin-bottom: 22px;
   background-color: #ffffff;
   border: 1px solid transparent;
   border-radius: 0px;
@@ -5643,7 +5643,7 @@ button.list-group-item-danger.active:focus {
   border: 0;
 }
 .panel-group {
-  margin-bottom: 22em;
+  margin-bottom: 22px;
 }
 .panel-group .panel {
   margin-bottom: 0;
@@ -5924,7 +5924,7 @@ button.close {
 }
 .modal-title {
   margin: 0;
-  line-height: 1.4em;
+  line-height: 1.4;
 }
 .modal-body {
   position: relative;
@@ -5977,7 +5977,7 @@ button.close {
   font-family: Droid Sans, sans-serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.4em;
+  line-height: 1.4;
   line-break: auto;
   text-align: left;
   text-align: start;
@@ -6095,7 +6095,7 @@ button.close {
   font-family: Droid Sans, sans-serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.4em;
+  line-height: 1.4;
   line-break: auto;
   text-align: left;
   text-align: start;
