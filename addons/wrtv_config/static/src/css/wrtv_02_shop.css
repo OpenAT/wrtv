@@ -61,6 +61,13 @@ h3.small_cart_header a {
 #order_total h3 {
     font-size: 18px;
 }
+.small_cart.oe_cart a {
+    color: #736664;
+}
+#cart_products a {
+        color: #736664;
+
+}
 
 
 /* --------------- */
@@ -70,6 +77,25 @@ h3.small_cart_header a {
 /* Full width and Buttons below */
 ul.checkout_steps_indicator {
     width: 100%;
+}
+ul.checkout_steps_indicator li {
+    background-color: #736664;
+}
+ul.checkout_steps_indicator li:hover {
+    background-color: #dd710f;
+}
+ul.checkout_steps_indicator li a:hover {
+    background-color: #dd710f;
+}
+ul.checkout_steps_indicator li.active {
+    background-color: white;
+}
+ul.checkout_steps_indicator.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover {
+    background-color: white;
+}
+ul.checkout_steps_indicator.nav-tabs > li > a,
+ul.checkout_steps_indicator.nav-tabs > li > a:hover {
+    border: none;
 }
 div.checkout_steps_buttons {
     width: 100%;
@@ -112,6 +138,17 @@ div.checkout_steps_buttons {
 /* ------- */
 /* PAYMENT */
 /* ------- */
+#payment_method .nav-tabs > li a,
+#payment_method .nav-tabs > li a:hover,
+#payment_method .nav-tabs > li a:focus {
+        color: #736664;
+}
+#payment_method .nav-tabs > li.active a,
+#payment_method .nav-tabs > li.active a:hover,
+#payment_method .nav-tabs > li.active a:focus {
+        color: black !important;
+}
+
 #payment_method .acquirer_pre_msg p {
     padding: 8px;
 }
