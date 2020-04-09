@@ -208,3 +208,10 @@ div.checkout_steps_buttons {
 /*[data-name='frst-submit-button'] {*/
 /*    max-width: 100%;*/
 /*}*/
+/* Change Shop Layout and keep Menü left and move cart to right */
+#products_grid_before .small_cart_header hr,
+#products_grid_before .small_cart oe_cart,
+#products_grid_before .text-left small_cart_buttons,
+#products_grid_before .text-left small_cart_buttons .clearfix {
+    float: right;
+}

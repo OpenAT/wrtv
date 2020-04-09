@@ -24,6 +24,33 @@
     max-width: initial;
 }
 
+/* special design for additional add to cart button within shop grid view */
+.oe_product_cart .quick_add_to_cart {
+    position: relative;
+    bottom: 10px;
+}
+.oe_product_cart .quick_add_to_cart .a-submit a {
+    width: 100%
+}
+.oe_product_cart .quick_add_to_cart .a-submit.fa-shopping-cart:before {
+    padding-right:10px;
+}
+/* reverse Shop Grid and Cart, move cart under shop grid */
+body[data-rootcatid="2"] #wrap > div.container.oe_website_sale > div.row {
+    display: flex;
+    flex-direction: column-reverse;
+}
+/* reverse Shop Grid and Cart, move cart under shop grid */
+body[data-rootcatid="3"] #wrap > div.container.oe_website_sale > div.row {
+    display: flex;
+    flex-direction: column-reverse;
+}
+/* reverse Shop Grid and Cart, move cart under shop grid */
+body[data-rootcatid="4"] #wrap > div.container.oe_website_sale > div.row {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 /* TODO: Shop Grid Size for col md-12 and two products per row
          You may need to remove the original css of website.sale becaues the media queries are different for rnde!
 */
