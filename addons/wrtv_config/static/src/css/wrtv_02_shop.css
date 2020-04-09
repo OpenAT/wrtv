@@ -118,7 +118,12 @@ div.checkout_steps_buttons {
 #wsd_checkout_form label.control-label.mandatory.text-danger:after {
     content: " *";
 }
-
+.price_donate_suggested_currency {
+    color: white !important;
+}
+#wsd-checkout-box > div > div > h1 {
+    color: #dd710f;
+}
 
 /* ONE PAGE CHECKOUT */
 /* ----------------- */
