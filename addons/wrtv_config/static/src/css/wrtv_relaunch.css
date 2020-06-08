@@ -1,0 +1,54 @@
+
+/* BUTTONS */
+.btn.btn-primary {
+    background-color: #DC0000;
+    border-color: #DC0000;
+}
+.btn-default {
+        background-color: #DC0000;
+    border-color: #DC0000;
+}
+
+/* INDICATORS */
+/* --------------- */
+/* STEPS INDICATOR */
+/* --------------- */
+
+/* Full width and Buttons below */
+ul.checkout_steps_indicator {
+    width: 100%;
+}
+ul.checkout_steps_indicator li {
+    background-color: #736664;
+}
+ul.checkout_steps_indicator li:hover {
+    background-color: #DC0000;
+}
+ul.checkout_steps_indicator li a:hover {
+    background-color: #DC0000;
+}
+ul.checkout_steps_indicator li.active {
+    background-color: white;
+}
+ul.checkout_steps_indicator.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover {
+    background-color: white;
+}
+.dropdown-menu > li > a:hover {
+    background-color: #dc0000;
+}
+
+
+/* HEADLINES */
+#wsd-checkout-box > div > div > h1 {
+    color: #DC0000;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+        color: #DC0000;
+}
+
+body .price_donate .form-control {
+    color: #B4B4B4;
+}
+.text-primary {
+    color: #B4B4B4;
+}
