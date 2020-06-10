@@ -81,19 +81,22 @@
 .wrtv_sb_fg_background .flexibleContainerCell .nestedContainerCell {
     background-color: #f6f6f5;
 }
+.wrtv_sb_bg_red .flexibleContainerCell h1 {
+    color: white;
+}
 .wrtv_sb_bg_red .flexibleContainerCell,
 .wrtv_sb_fg_red .flexibleContainerCell .nestedContainerCell {
-    background-color: #dd710f;
-    color: black;
+    background-color: #DC0000;
+    color: white;
 }
 .wrtv_sb_fg_grey .flexibleContainerCell,
 .wrtv_sb_bg_grey .flexibleContainerCell .nestedContainerCell {
-    background-color: #736664;
-    color: white;
+    background-color: #d2d2d2;
+    color: black;
 }
 .wrtv_sb_bg_yellow .flexibleContainerCell,
 .wrtv_sb_fg_yellow .flexibleContainerCell .nestedContainerCell {
-    background-color: #f6d6b7;
+    background-color: #E1CA99;
     color: black;
 }
 
@@ -159,10 +162,10 @@
 }
 
 .snippet_block_text_image_left.wrtv_text_image_blue_box .contentTable {
-    background-color: #736664;
+    background-color: #288C8C;
 }
 .snippet_block_text_image_left.wrtv_text_image_red_box .contentTable {
-    background-color: #F19130;
+    background-color: #DC0000;
 }
 
 .snippet_block_text_image_left.wrtv_text_image_blue_box .flexibleContainerCell,

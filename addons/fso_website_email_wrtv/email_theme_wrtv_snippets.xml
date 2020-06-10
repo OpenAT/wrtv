@@ -59,7 +59,7 @@
                 <li data-value=''><a>None</a></li>
                 <li data-value='wrtv_sb_fg_red'><a>Red</a></li>
                 <li data-value='wrtv_sb_fg_grey'><a>Grau</a></li>
-                <li data-value='wrtv_sb_fg_yellow'><a>Hell Orange</a></li>
+                <li data-value='wrtv_sb_fg_yellow'><a>Baige</a></li>
                 <li data-value='wrtv_sb_fg_background'><a>Background</a></li>
             </ul>
         </xpath>
@@ -67,9 +67,10 @@
         <!-- wrtv Background styles -->
         <xpath expr="//div[@data-snippet-option-id='dadi_sb_bg_color']//ul" position="replace">
             <ul class="dropdown-menu">
+                <li data-value=''><a>None</a></li>
                 <li data-value='wrtv_sb_bg_red'><a>Red</a></li>
                 <li data-value='wrtv_sb_bg_grey'><a>Grau</a></li>
-                <li data-value='wrtv_sb_bg_yellow'><a>Hell Orange</a></li>
+                <li data-value='wrtv_sb_bg_yellow'><a>Baige</a></li>
                 <li data-value='wrtv_sb_bg_background'><a>Background</a></li>
             </ul>
         </xpath>
@@ -145,7 +146,7 @@
                 <a>Blau</a>
             </li>
            <li data-value='bpbutton_style_yellow'>
-                <a>Gelb</a>
+                <a>Baige</a>
             </li>
         </xpath>
         

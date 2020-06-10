@@ -37,8 +37,8 @@
     text-underline: none;
     text-decoration: none;
     /* for safety */
-    background-color: #dd710f;
-    border-color: #dd710f;
+    background-color: #DC0000;
+    border-color: #DC0000;
     color: white;
 }
 
@@ -81,8 +81,8 @@
 /* bpbutton_style_default */
 .snippet_block_bpbutton.bpbutton_style_default .bpbutton_table,
 .snippet_block_bpbutton.bpbutton_style_default .bpbutton_table a {
-    background-color: #666666;
-    border-color: #666666;
+    background-color: #DC0000;
+    border-color: #DC0000;
     color: #ffffff;
     font-weight: bold;
 }
@@ -90,25 +90,24 @@
 /* green */
 .snippet_block_bpbutton.bpbutton_style_green .bpbutton_table,
 .snippet_block_bpbutton.bpbutton_style_green .bpbutton_table a {
-    background-color: #63bc46;
-    border-color: #63bc46;
+    background-color: #46B16E;
+    border-color: #46B16E;
     color: white;
     font-weight: bold;
 }
 /* blue */
 .snippet_block_bpbutton.bpbutton_style_blue .bpbutton_table,
 .snippet_block_bpbutton.bpbutton_style_blue .bpbutton_table a {
-    background-color: #736664;
-    border-color: #736664;
+    background-color: #288C8C;
+    border-color: #288C8C;
     color: white;
     font-weight: bold;
 }
 /* yellow */
 .snippet_block_bpbutton.bpbutton_style_yellow .bpbutton_table,
 .snippet_block_bpbutton.bpbutton_style_yellow .bpbutton_table a {
-    background-color: #dd710f;
-    border-color: #dd710f;
+    background-color: #E1CA99;
+    border-color: #E1CA99;
     color: black;
     font-weight: bold;
 }
-

@@ -25,83 +25,10 @@
                         <!-- Icon and name -->
                         <div class="oe_snippet_thumbnail">
                             <img class="oe_snippet_thumbnail_img"
-                                 src="/fso_website_email_wrtv/static/src/icons/header_snippet.jpg"/>
+                                 src="/fso_website_email_wrtv/static/src/icons/header_snippet.png"/>
                             <span class="oe_snippet_thumbnail_title">Header Snippet</span>
                         </div>
                         <div id="combinedheadersnippet" class="oe_snippet_body ckediting_disabled wrtv_bin">
-                            <div class="snippet_block ckediting_enabled snippet_block_text_image_left wrtv_sb_bg_grey">
-                                <table cellpadding="0" cellspacing="0" class="centeringTable">
-                                    <tbody>
-                                        <tr>
-                                            <td align="center" valign="top">
-                                                <table border="0" cellpadding="0" cellspacing="0"
-                                                       class="flexibleContainer">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td align="center" class="flexibleContainerCell"
-                                                                valign="top">
-                                                                <table border="0" cellpadding="0" cellspacing="0"
-                                                                       class="nestedContainer">
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td align="center"
-                                                                                class="nestedContainerCell"
-                                                                                valign="top">
-                                                                                <table border="0" cellpadding="0"
-                                                                                       cellspacing="0"
-                                                                                       class="contentTable">
-                                                                                    <tbody>
-                                                                                        <tr>
-                                                                                            <td class="textContent">
-                                                                                                <table align="left"
-                                                                                                       border="0"
-                                                                                                       cellpadding="0"
-                                                                                                       cellspacing="0"
-                                                                                                       class="flexibleContainerLeft">
-                                                                                                    <tbody>
-                                                                                                        <tr>
-                                                                                                            <td align="left"
-                                                                                                                class="imageContent ckediting_enabled"
-                                                                                                                valign="top">
-                                                                                                                <img class="flexibleImage"
-                                                                                                                     src="/fso_website_email_wrtv/static/src/icons/hund_auf_buch.png"/>
-                                                                                                            </td>
-                                                                                                        </tr>
-                                                                                                    </tbody>
-                                                                                                </table>
-
-                                                                                                <table align="left" border="0"
-                                                                                                       cellpadding="0"
-                                                                                                       cellspacing="0"
-                                                                                                       class="flexibleContainerRight">
-                                                                                                    <tbody>
-                                                                                                        <tr>
-                                                                                                            <td class="textContent ckediting_enabled"
-                                                                                                                valign="middle">
-                                                                                                                <h3 style="padding-top: 25px; color: white;">
-                                                                                                                    Tierschutz-News
-                                                                                                                </h3>
-                                                                                                            </td>
-                                                                                                        </tr>
-                                                                                                    </tbody>
-                                                                                                </table>
-                                                                                            </td>
-                                                                                        </tr>
-                                                                                    </tbody>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
 
                             <div class="snippet_block ckediting_enabled snippet_block_text_twocol">
                                 <table cellpadding="0" cellspacing="0" class="centeringTable">
@@ -138,7 +65,7 @@
                                                                                                                 class="textContent ckediting_enabled"
                                                                                                                 valign="top">
                                                                                                                 <img class="flexibleImage"
-                                                                                                                     src="/fso_website_email_wrtv/static/src/icons/wtv_logo_kl_tr.png"/>
+                                                                                                                     src="/fso_website_email_wrtv/static/src/icons/ta-logo-kl.jpg"/>
                                                                                                             </td>
                                                                                                         </tr>
                                                                                                     </tbody>
@@ -203,21 +130,10 @@
                                                                                         <tr>
                                                                                             <td class="textContent ckediting_enabled">
                                                                                                 <h1 style="padding-bottom: 0; font-size:36px; line-height: 120%;">
-                                                                                                    <span style="color:#dd710f;">
-                                                                                                        Wiener
-                                                                                                        Tierschutzverein
+                                                                                                    <span style="color:#DC0000;">
+                                                                                                        Tierschutz News
                                                                                                     </span>
                                                                                                 </h1>
-
-                                                                                                <p>
-                                                                                                    <span style="color:#dd710f;">
-                                                                                                        Die Stimme der
-                                                                                                        Tier.
-                                                                                                        Das
-                                                                                                        Original seit
-                                                                                                        1846.
-                                                                                                    </span>
-                                                                                                </p>
                                                                                             </td>
                                                                                         </tr>
                                                                                     </tbody>
@@ -244,7 +160,7 @@
                         <!-- Icon and name -->
                         <div class="oe_snippet_thumbnail">
                             <img class="oe_snippet_thumbnail_img"
-                                 src="/fso_website_email_wrtv/static/src/icons/footer_snippet.jpg"/>
+                                 src="/fso_website_email_wrtv/static/src/icons/footer_snippet.png"/>
                             <span class="oe_snippet_thumbnail_title">Footer Snippet</span>
                         </div>
                         <div id="combinedsnippetfooter" class="oe_snippet_body ckediting_disabled wrtv_bin">
@@ -273,16 +189,14 @@
                                                                                     <tbody>
                                                                                         <tr>
                                                                                             <td class="textContent ckediting_enabled">
-                                                                                                <h2 style="color:#ffffff;">Wiener
-                                                                                                    Tierschutzverein
+                                                                                                <h2 style="color:#ffffff;">Tierschutz Austria
                                                                                                 </h2>
 
                                                                                                 <p>
                                                                                                     <span style="color:#ffffff;">
-                                                                                                        Die Stimmer der
-                                                                                                        Tiere.
-                                                                                                        Das Originial
-                                                                                                        seit 1846.
+                                                                                                        Wir geben Tieren in Not eine Stimme, du auch?<br></br>
+                                                                                                        Jetzt mithelfen: <a href="https://www.tierschutz-austria.at">tierschutz-austria.at</a><br></br>
+                                                                                                        Das Originial seit 1846.
                                                                                                     </span>
                                                                                                 </p>
                                                                                             </td>
@@ -340,7 +254,7 @@
                                                                                                                 valign="top">
                                                                                                                 <a href="https://www.facebook.com/wienertierschutzverein/" target="_blank">
                                                                                                                 <img class="flexibleImage mediaicon"
-                                                                                                                     src="/fso_website_email_wrtv/static/src/icons/facebook_ws.png"
+                                                                                                                     src="/fso_website_email_wrtv/static/src/icons/facebook_red.png"
                                                                                                                      style="text-align:center; width:32px; height:32px;"/></a>
                                                                                                             </td>
                                                                                                         </tr>
@@ -358,10 +272,10 @@
                                                                                                                 class="textContent ckediting_enabled"
                                                                                                                 style="text-align:center;"
                                                                                                                 valign="top">
-                                                                                                                <a href="https://www.wiener-tierschutzverein.org" target="_blank">
+                                                                                                                <a href="https://www.tierschutz-austria.at" target="_blank">
                                                                                                                 <img class="flexibleImage mediaicon"
-                                                                                                                     src="/fso_website_email_wrtv/static/src/icons/wtv_logo_kl_tr.png"
-                                                                                                                     style="text-align:center; width:32px; height:32px;"/></a>
+                                                                                                                     src="/fso_website_email_wrtv/static/src/icons/ta-logo-kl.jpg"
+                                                                                                                     style="text-align:center; width:32px; height:28px;"/></a>
                                                                                                             </td>
                                                                                                         </tr>
                                                                                                     </tbody>
@@ -380,7 +294,7 @@
                                                                                                                 valign="top">
                                                                                                                 <a href="https://www.instagram.com/wienertierschutzverein" target="_blank">
                                                                                                                 <img class="flexibleImage mediaicon"
-                                                                                                                     src="/fso_website_email_wrtv/static/src/icons/instagram_logo_May2016_orange.png"
+                                                                                                                     src="/fso_website_email_wrtv/static/src/icons/instagram_logo_red.png"
                                                                                                                      style="text-align:center; width:32px; height:32px;"/></a>
                                                                                                             </td>
                                                                                                         </tr>
@@ -428,33 +342,29 @@
                                                                                     <tbody>
                                                                                         <tr>
                                                                                             <td class="textContent ckediting_enabled">
-                                                                                                <p style="text-align: center;">
-                                                                                                    <span style="color: rgb(51, 51, 51); font-size: 16px; background-color: transparent; text-align: center;">
-                                                                                                        Wiener
-                                                                                                        Tierschutzverein
+                                                                                                <p style="text-align: center; font-size: 12px;">
+                                                                                                    <span style="color: rgb(51, 51, 51); background-color: transparent; text-align: center;">
+                                                                                                        Tierschutz Austria
                                                                                                     </span>
                                                                                                 </p>
 
-                                                                                                <p style="text-align: center;">
+                                                                                                <p style="text-align: center; font-size: 12px;">
                                                                                                     Triester Straße 8,
                                                                                                     2331
                                                                                                     Vösendorf
                                                                                                     <br>
-                                                                                                        Tel: +43 1 699
-                                                                                                        24 50 |
-                                                                                                        Fax: +43 1 699
-                                                                                                        24 50 -
-                                                                                                        98
+                                                                                                        Tel: +43 1 699 24 50
                                                                                                     </br>
-                                                                                                    <a href="https://www.wiener-tierschutzverein.org/de/datenschutz/">
+                                                                                                    Informtionen zum
+                                                                                                    <a href="https://www.tierschutz-austria.at/datenschutz/">
                                                                                                         Datenschutz</a>
-                                                                                                    |
-                                                                                                    <a href="https://www.wiener-tierschutzverein.org" target="_blank">www.wiener-tierschutzverein.org</a>
+                                                                                                    auf
+                                                                                                    <a href="https://www.tierschutz-austria.at" target="_blank">tierschutz-austria.at</a>
                                                                                                     <br>
                                                                                                         © 2020 Wiener
                                                                                                         Tierschutzverein
                                                                                                         -
-                                                                                                        <a style="color: grey;" href="https://www.wiener-tierschutzverein.org/de/newsletter-abmelden/" target="_blank">Newsletter abmelden</a>
+                                                                                                        <a style="color: grey;" href="https://www.tierschutz-austria.at/newsletter-abmelden/" target="_blank">Newsletter abmelden</a>
                                                                                                     </br>
                                                                                                 </p>
                                                                                             </td>
