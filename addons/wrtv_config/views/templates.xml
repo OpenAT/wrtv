@@ -73,9 +73,13 @@
     </template>
      <template id="wrtv_relauch_custom_css" inherit_id="website.layout" name="wrtv Relauch Custom CSS">
          <xpath expr="//head" position="inside">
+<!--
              <t t-if="'wrtv-relaunch-css' in request.httprequest.query_string">
+-->
                  <link rel="stylesheet" href='/wrtv_config/static/src/css/wrtv_relaunch.css'/>
+<!--
              </t>
+-->
          </xpath>
      </template>
    <template id="wrtv_assets_editor" inherit_id="website.assets_editor" name="wrtv Editor assets">

@@ -65,7 +65,7 @@
                                                                                                                 class="textContent ckediting_enabled"
                                                                                                                 valign="top">
                                                                                                                 <img class="flexibleImage"
-                                                                                                                     src="/fso_website_email_wrtv/static/src/icons/ta-logo-kl.jpg"/>
+                                                                                                                     src="/fso_website_email_wrtv/static/src/icons/ta-logo-neu-kl-150.png"/>
                                                                                                             </td>
                                                                                                         </tr>
                                                                                                     </tbody>
@@ -195,8 +195,7 @@
                                                                                                 <p>
                                                                                                     <span style="color:#ffffff;">
                                                                                                         Wir geben Tieren in Not eine Stimme, du auch?<br></br>
-                                                                                                        Jetzt mithelfen: <a href="https://www.tierschutz-austria.at">tierschutz-austria.at</a><br></br>
-                                                                                                        Das Originial seit 1846.
+                                                                                                        Jetzt mithelfen! <a style="color:#ffffff" href="https://www.tierschutz-austria.at">tierschutz-austria.at</a><br></br>
                                                                                                     </span>
                                                                                                 </p>
                                                                                             </td>
@@ -343,7 +342,7 @@
                                                                                         <tr>
                                                                                             <td class="textContent ckediting_enabled">
                                                                                                 <p style="text-align: center; font-size: 12px;">
-                                                                                                    <span style="color: rgb(51, 51, 51); background-color: transparent; text-align: center;">
+                                                                                                    <span style="font-size:12px; color: rgb(51, 51, 51); background-color: transparent; text-align: center;">
                                                                                                         Tierschutz Austria
                                                                                                     </span>
                                                                                                 </p>
@@ -355,16 +354,16 @@
                                                                                                     <br>
                                                                                                         Tel: +43 1 699 24 50
                                                                                                     </br>
-                                                                                                    Informtionen zum
-                                                                                                    <a href="https://www.tierschutz-austria.at/datenschutz/">
+                                                                                                    Informationen zum
+                                                                                                    <a style="font-size:12px;" href="https://www.tierschutz-austria.at/datenschutz/" target="_blank">
                                                                                                         Datenschutz</a>
                                                                                                     auf
-                                                                                                    <a href="https://www.tierschutz-austria.at" target="_blank">tierschutz-austria.at</a>
+                                                                                                    <a style="font-size:12px;" href="https://www.tierschutz-austria.at" target="_blank">tierschutz-austria.at</a>
                                                                                                     <br>
                                                                                                         © 2020 Wiener
                                                                                                         Tierschutzverein
                                                                                                         -
-                                                                                                        <a style="color: grey;" href="https://www.tierschutz-austria.at/newsletter-abmelden/" target="_blank">Newsletter abmelden</a>
+                                                                                                        <a style="color: grey; font-size:12px;" href="https://www.tierschutz-austria.at/newsletter-abmelden/" target="_blank">Newsletter abmelden</a>
                                                                                                     </br>
                                                                                                 </p>
                                                                                             </td>
