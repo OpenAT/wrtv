@@ -68,6 +68,7 @@
             <link rel='stylesheet' href='/wrtv_config/static/src/css/wrtv_01_theme_buttons.css' t-ignore="true"/>
             <link rel='stylesheet' href='/wrtv_config/static/src/css/wrtv_02_shop.css' t-ignore="true"/>
             <link rel='stylesheet' href='/wrtv_config/static/src/css/wrtv_02_shop_categories.css' t-ignore="true"/>
+            <link rel='stylesheet' href='/wrtv_config/static/src/css/wrtv_08_christkindaktion.css' t-ignore="true"/>
             <link rel='stylesheet' href='/wrtv_config/static/src/css/wrtv_09_glyphicons.css' t-ignore="true"/>
         </xpath>
     </template>

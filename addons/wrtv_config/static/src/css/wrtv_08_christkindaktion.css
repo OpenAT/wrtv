@@ -1,0 +1,82 @@
+/* ---------------------- next category ---------------------- */
+
+/* reverse Shop Grid and Cart, move cart under shop grid */
+body[data-rootcatid="5"] #wrap > div.container.oe_website_sale > div.row {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+/* ---------------------- next category ---------------------- */
+
+/* reverse Shop Grid and Cart, move cart under shop grid */
+body[data-rootcatid="6"] #wrap > div.container.oe_website_sale > div.row {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+/* ---------------------- next category ---------------------- */
+
+/* reverse Shop Grid and Cart, move cart under shop grid */
+body[data-rootcatid="7"] #wrap > div.container.oe_website_sale > div.row {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* correctly hide Stuff and keep screenreaders intact*/
+/* best practices https://stackoverflow.com/questions/26032089/in-html-how-can-i-have-text-that-is-only-accessible-for-screen-readers-i-e-fo */
+/* special config for making this process as "unshopify" as possible" */
+body[data-rootcatid="8"] #payment_method,
+body[data-rootcatid="8"] .payment_interval_ids,
+body[data-rootcatid="8"] .row.ppt_opc-small_cart, /*warenkorb ausblenden ist keine Gute Idee weil andere Produkte drinne sein könnten*/
+body[data-rootcatid="7"] #payment_method,
+body[data-rootcatid="7"] .payment_interval_ids,
+body[data-rootcatid="7"] .row.ppt_opc-small_cart,/*warenkorb ausblenden ist keine Gute Idee weil andere Produkte drinne sein könnten*/
+body[data-rootcatid="6"] .payment_interval_ids,
+body[data-rootcatid="6"] #payment_method,
+body[data-rootcatid="6"] .row.ppt_opc-small_cart,/*warenkorb ausblenden ist keine Gute Idee weil andere Produkte drinne sein könnten*/
+body[data-rootcatid="5"] .payment_interval_ids,
+body[data-rootcatid="5"] #payment_method,
+body[data-rootcatid="5"] .row.ppt_opc-small_cart { /*warenkorb ausblenden ist keine Gute Idee weil andere Produkte drinne sein könnten*/
+    position: absolute !important; /* Outside the DOM flow */
+    height: 1px; width: 1px; /* Nearly collapsed */
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE 7+ only support clip without commas */
+    clip: rect(1px, 1px, 1px, 1px); /* All other browsers */
+}
+
+/* HIde Download Button on the OPC Checkout Page to ensure you have to give your details */
+
+body[data-rootcatid="8"] .webshop_download_file,
+body[data-rootcatid="7"] .webshop_download_file,
+body[data-rootcatid="6"] .payment_interval_ids,
+body[data-rootcatid="5"] .webshop_download_file{
+    display: none;
+}
+
+html[data-view-xmlid="website.dankeandaschristkind"] img.img.img-responsive:hover {
+      transition: transform 1s !important; /* Animation */
+      transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+body[data-rootcatid="8"] .oe_product_cart .quick_add_to_cart .a-submit.fa-shopping-cart:before,
+body[data-rootcatid="7"] .oe_product_cart .quick_add_to_cart .a-submit.fa-shopping-cart:before,
+body[data-rootcatid="6"] .oe_product_cart .quick_add_to_cart .a-submit.fa-shopping-cart:before,
+body[data-rootcatid="5"] .oe_product_cart .quick_add_to_cart .a-submit.fa-shopping-cart:before {
+        padding-right: 5px;
+        content: " ";
+    content: "Mein Christkind";
+}
+body[data-rootcatid="8"] .hidemeforchristmas,
+body[data-rootcatid="7"] .hidemeforchristmas,
+body[data-rootcatid="6"] .hidemeforchristmas,
+body[data-rootcatid="5"] .hidemeforchristmas {
+    display: none;
+}
+body[data-rootcatid="8"] .oe_product_cart .quick_add_to_cart,
+body[data-rootcatid="7"] .oe_product_cart .quick_add_to_cart,
+body[data-rootcatid="6"] .oe_product_cart .quick_add_to_cart,
+body[data-rootcatid="5"] .oe_product_cart .quick_add_to_cart {
+    display: none;
+}

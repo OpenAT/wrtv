@@ -132,6 +132,12 @@ div.checkout_steps_buttons {
     display: none;
 }
 
+.ppt_opc #wsd-checkout-box img.img.img-responsive.img-circle.product-image.product_detail_img {
+    width: auto;
+    border-radius: 30px;
+    border: 6px solid rgb(220, 0, 0);
+}
+
 .ppt_opc h3.amount_title {
     text-align: center;
 }

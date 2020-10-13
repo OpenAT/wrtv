@@ -1,0 +1,77 @@
+Betreff: Vielen Dank für Ihre tierliebe Unterstützung!
+von: spendenservice@tierschutz-austria.at
+
+
+
+
+<div style="font-family: Arial, Verdana, sans-serif; font-size: 14px;">
+<h2>
+    % if object.partner_id.gender == 'male'
+        Lieber Herr
+    % elif object.partner_id.gender == 'female'
+        Liebe Frau
+    % elif object.partner_id.gender == 'other'
+    Hallo
+    % endif
+        ${object.partner_id.lastname or ''},</h2><br>
+        vielen Dank für Ihr Vertrauen und Ihre großzügige Unterstützung für Tiere in Not!<br>
+        Nur durch Ihre Hilfe ist uns unser Einsatz für Tiere möglich.
+<p>Wir bedanken uns ganz herzlich! <br><br>
+Bei Fragen können Sie uns gerne kontaktieren - unser Spendenservice-Team steht Ihnen unter <br>
+<strong>spendenservice@tierschutz-austria.at</strong> oder telefonisch unter <strong>01 699 24 50 - 19</strong> oder <strong>18</strong> zur Verfügung. <br>
+Unsere Telefonzeiten sind Montag bis Donnerstag von 9 bis 16 Uhr sowie Freitag von 9 bis 13 Uhr.<br></p>
+        Ihre Zuwendung bedeutet uns daher sehr viel.
+    <h3><br>Bitte überprüfen Sie Ihre angegebenen Daten auf Ihre Richtigkeit:</h3>
+    <p>
+        % if object.partner_id.name:
+            ${object.partner_id.name}<br>
+        % endif
+        % if object.partner_id.street:
+            ${object.partner_id.street or ''} ${object.partner_id.street_number_web or ''}<br>
+        % endif
+        % if object.partner_id.street2:
+            ${object.partner_id.street2}<br>
+        % endif
+        % if object.partner_id.city or object.partner_id.zip:
+            ${object.partner_id.zip} ${object.partner_id.city}<br>
+        % endif
+        % if object.partner_id.email:
+            E-Mail:&nbsp;<a style="color:#dc0000;" href="mailto:${object.partner_id.email}">${object.partner_id.email}</a><br>
+        % endif
+
+     </p>
+    <h3><br>Zahlungsübersicht:&nbsp;</h3>
+    <p style="padding-left: 14px;">
+        Transaktionsnummer: <strong>${object.name}</strong><br>
+        Gesamtsumme: ${object.amount_total}&nbsp;${object.pricelist_id.currency_id.name}<br>
+        Datum: ${format_tz(object.date_order, tz='Europe/Vienna', format='%Y-%m-%d %H:%M')}<br>
+        Status: <strong style="text-transform:uppercase;">${object.payment_tx_id.state or '?'}</strong>
+    </p>
+    <h3>
+        <strong>${object.company_id.name}<br>
+        Die Stimme der Tiere. Seit 1846.</strong></h3>
+    <p>
+        Wiener Tierschutzverein<br>
+        % if object.company_id.street:
+            ${object.company_id.street}<br>
+        % endif
+        % if object.company_id.street2:
+            ${object.company_id.street2}<br>
+        % endif
+        % if object.company_id.city or object.company_id.zip:
+            ${object.company_id.zip} ${object.company_id.city}<br>
+        % endif
+        % if object.company_id.country_id:
+            ${object.company_id.state_id and ('%s, ' % object.company_id.state_id.name) or ''} ${object.company_id.country_id.name or ''}<br>
+        % endif
+        % if object.company_id.website:
+            <a style="color:#dc0000;" href="${object.company_id.website}">${object.company_id.website}</a><br>
+        % endif
+        % if object.company_id.logo:
+            </p><div style="padding:0; margin:0;"><img src="data:image/png;base64,${object.company_id.logo}" style="width: 120px;"></div>
+        % endif
+    <p style="font-size:11px;">Tierschutz Austria ist eine Wort-Bildmarke des Wiener Tierschutzvereins. Der Wiener Tierschutzverein ist Träger<br>
+des Österreichischen Spendegütesiegels. Dieses garantiert Ihnen die zweckmäßige Verwendung Ihrer Spenden.</p>
+
+</div>
+
