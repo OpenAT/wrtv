@@ -82,3 +82,9 @@ body .col-md-12 .oe-height-2 {
 ul.nav-stacked > li > a {
     color: #dc0000;
 }
+.oe_product .oe_product_image {
+     left: 0px;
+     right: 0px;
+     top: 0px;
+     bottom: 0px;
+}
