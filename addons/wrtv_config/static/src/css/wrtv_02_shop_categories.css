@@ -82,9 +82,10 @@ body .col-md-12 .oe-height-2 {
 ul.nav-stacked > li > a {
     color: #dc0000;
 }
+/* to be checked warum dieses setting bei mir lokal klapp aber am Server offensichtlich später geladen wird und damit vom default überschrieben wird setze auf !important */
 .oe_product .oe_product_image {
-     left: 0px;
-     right: 0px;
-     top: 0px;
-     bottom: 0px;
+     left: 0px !important;
+     right: 0px !important;
+     top: 0px !important;
+     bottom: 0px !important;
 }
