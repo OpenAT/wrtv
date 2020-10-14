@@ -19,14 +19,6 @@ Betreff: ${('Liebes Christkind' if object.cat_root_id.id == 5 or object.cat_root
     % for so_line in object.order_line:
       <strong>${so_line.product_id.description_sale or ''} </strong>
     % endfor
-% for line in object.order_line:
-    % if line.product_id.webshop_download_file:
-         <p></p><div><a href="/web/binary/saveas?model=product.product&amp;field=webshop_download_file&amp;filename_field=webshop_download_file_name&amp;id=${line.product_id.id}">Download</a></div>
-    % endif
-    % if line.product_tmpl_id.webshop_download_file:
-        <div><a href="/web/binary/saveas?model=product.template&amp;field=webshop_download_file&amp;filename_field=webshop_download_file_name&amp;id=${line.product_tmpl_id.id}">Download</a></div>
-    % endif
-% endfor
 <p></p>
     Besorge einen, mehrere oder sogar alle Wünsche von der Liste, schnüre ein Paket und beschrifte<br>
     es vollständig mit dem Namen deines Schützlings und der entsprechenden Protokoll-Nummer.<br>
@@ -52,7 +44,15 @@ Betreff: ${('Liebes Christkind' if object.cat_root_id.id == 5 or object.cat_root
     Triester Straße 8<br>
     2331 Vösendorf<br>
     ---------------------------------------------------------------------------<br>
-    </p>
+Hier finden Sie Wunschliste, Paketetikett und Gutscheine zum Download:
+% for line in object.order_line:
+    % if line.product_id.webshop_download_file:
+         </p><p></p><div><a href="/web/binary/saveas?model=product.product&amp;field=webshop_download_file&amp;filename_field=webshop_download_file_name&amp;id=${line.product_id.id}" style="color:#dc0000;">Download</a></div>
+    % endif
+    % if line.product_tmpl_id.webshop_download_file:
+        <div><a href="/web/binary/saveas?model=product.template&amp;field=webshop_download_file&amp;filename_field=webshop_download_file_name&amp;id=${line.product_tmpl_id.id}" style="color:#dc0000;">Download</a></div>
+    % endif
+% endfor
     <p>
         <br>Dein Weihnachtsgeschenk kannst du entweder persönlich in unserem Foyer abgeben <br>oder per Post an uns schicken.</p>
         <p>
@@ -63,9 +63,9 @@ Betreff: ${('Liebes Christkind' if object.cat_root_id.id == 5 or object.cat_root
         </p>
     <p>
     Bei Fragen steht dir unser Christkind-Büro telefonisch unter +43 1 699 24 50 – Durchwahl 18<br>
-    oder 19 <strong>(neue Nummer)</strong> oder per E-Mail unter christkind@tierschutz-austria.at zur Verfügung.<br>
+    oder 19 oder per E-Mail unter christkind@tierschutz-austria.at zur Verfügung.<br>
     Telefonate und E-Mails werden im Aktionszeitraum von <strong>Montag bis Donnerstag, jeweils von 9<br>
-    bis 16 Uhr, beantwortet. (neue Zeiten)</strong>
+    bis 16 Uhr, beantwortet.</strong>
     </p>
     <p>Wir bedanken uns im Namen unserer tierischen Schützlinge und wünschen ein besinnliches Weihnachtsfest! </p><br><br>
 % else

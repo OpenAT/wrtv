@@ -80,3 +80,41 @@ body[data-rootcatid="6"] .oe_product_cart .quick_add_to_cart,
 body[data-rootcatid="5"] .oe_product_cart .quick_add_to_cart {
     display: none;
 }
+body[data-rootcatid="8"] .text-info.oe_subdescription,
+body[data-rootcatid="7"] .text-info.oe_subdescription,
+body[data-rootcatid="6"] .text-info.oe_subdescription,
+body[data-rootcatid="5"] .text-info.oe_subdescription {
+    display: none;
+}
+body[data-rootcatid="8"] #products_grid section > h5,
+body[data-rootcatid="7"] #products_grid section > h5,
+body[data-rootcatid="6"] #products_grid section > h5,
+body[data-rootcatid="5"] #products_grid section > h5 {
+    text-align: center;
+    font-size: 28px;
+}
+body[data-rootcatid="8"] .checkoutbox_product_image,
+body[data-rootcatid="7"] .checkoutbox_product_image,
+body[data-rootcatid="6"] .checkoutbox_product_image,
+body[data-rootcatid="5"] .checkoutbox_product_image {
+    margin-bottom: 10px;
+}
+body[data-rootcatid="8"] .ppt_opc .price_donate_suggested,
+body[data-rootcatid="7"] .ppt_opc .price_donate_suggested,
+body[data-rootcatid="6"] .ppt_opc .price_donate_suggested,
+body[data-rootcatid="5"] .ppt_opc .price_donate_suggested {
+  border-radius: 10px;
+}
+
+body[data-rootcatid="8"] .price_donate_suggested_currency,
+body[data-rootcatid="7"] .price_donate_suggested_currency,
+body[data-rootcatid="6"] .price_donate_suggested_currency,
+body[data-rootcatid="5"] .price_donate_suggested_currency {
+    margin-left: 12px !important;
+}
+body[data-rootcatid="8"] #wrap > div.container.oe_website_sale > div:nth-child(1) > div > form > div,
+body[data-rootcatid="7"] #wrap > div.container.oe_website_sale > div:nth-child(1) > div > form > div,
+body[data-rootcatid="6"] #wrap > div.container.oe_website_sale > div:nth-child(1) > div > form > div,
+body[data-rootcatid="5"] #wrap > div.container.oe_website_sale > div:nth-child(1) > div > form > div {
+    display: none;
+}
