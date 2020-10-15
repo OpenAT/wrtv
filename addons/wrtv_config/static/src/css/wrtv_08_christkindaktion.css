@@ -118,3 +118,40 @@ body[data-rootcatid="6"] #wrap > div.container.oe_website_sale > div:nth-child(1
 body[data-rootcatid="5"] #wrap > div.container.oe_website_sale > div:nth-child(1) > div > form > div {
     display: none;
 }
+body[data-rootcatid="8"] .amount_title,
+body[data-rootcatid="7"] .amount_title,
+body[data-rootcatid="6"] .amount_title,
+body[data-rootcatid="5"] .amount_title {
+    color: #777777;
+    font-size: 16px;
+}
+body[data-rootcatid="8"] #description_sale .text-muted,
+body[data-rootcatid="7"] #description_sale .text-muted,
+body[data-rootcatid="6"] #description_sale .text-muted,
+body[data-rootcatid="5"] #description_sale .text-muted {
+    color: #DC0000;
+    font-size: 20px;
+}
+body[data-rootcatid="8"] div#description_sale,
+body[data-rootcatid="7"] div#description_sale,
+body[data-rootcatid="6"] div#description_sale,
+body[data-rootcatid="5"] div#description_sale {
+    background-color: #fff;
+   -moz-box-shadow:    inset 0 0 10px #DC0000;
+   -webkit-box-shadow: inset 0 0 10px #DC0000;
+   box-shadow:         inset 0 0 10px #DC0000;
+    width: fit-content;
+    max-width: 412px;
+    margin: auto;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+
+}
+body[data-rootcatid="8"] div#description_sale:before,
+body[data-rootcatid="7"] div#description_sale:before,
+body[data-rootcatid="6"] div#description_sale:before,
+body[data-rootcatid="5"] div#description_sale:before {
+        content: "wünscht sich folgendes ...";
+}
+
+
