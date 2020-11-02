@@ -154,4 +154,18 @@ body[data-rootcatid="5"] div#description_sale:before {
         content: "Ich wünsche mir zu Weihnachten:";
 }
 
-
+body[data-rootcatid="8"] #products_grid_before,
+body[data-rootcatid="7"] #products_grid_before,
+body[data-rootcatid="6"] #products_grid_before,
+body[data-rootcatid="5"] #products_grid_before {
+    display: none;
+}
+body[data-rootcatid="2"] #products_grid_before,
+body[data-rootcatid="3"] #products_grid_before {
+    display: initial;
+}
+body[data-rootcatid="2"] #products_grid_before ul.nav.nav-pills.nav-stacked.mt16,
+body[data-rootcatid="3"] #products_grid_before ul.nav.nav-pills.nav-stacked.mt16,
+body[data-rootcatid="4"] #products_grid_before ul.nav.nav-pills.nav-stacked.mt16 {
+    display: none;
+}
