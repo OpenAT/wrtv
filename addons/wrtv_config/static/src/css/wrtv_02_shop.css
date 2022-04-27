@@ -5,6 +5,9 @@ body #website_sale_login_info {
     display: none;
 }
 
+a.wsd_button_back_to_page.btn.btn-default.navbar-btn {
+    display:none;
+}
 /* FIxED for STANDARD */
 .payment_interval_ids {
     text-align: center;
