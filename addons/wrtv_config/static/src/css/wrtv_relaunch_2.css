@@ -104,6 +104,10 @@ h4#payment_intervals {
     order: -2;
 }
 
+#wsd_checkout_form > div > h3 {
+    display: none;
+}
+
 div[itemprop="offers"] {
     order: -1;
 }
@@ -137,4 +141,8 @@ body .oe_website_sale .row .row .col-md-12 {
     color: black;
     text-align: left;
     font-weight: bold;
+}
+
+.mandatory {
+    color: black !important;
 }
