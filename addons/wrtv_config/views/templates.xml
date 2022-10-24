@@ -5,7 +5,7 @@
         <!-- Load custom JS for the website for Shop Disable Jump to ProductPage on Grid Icon Click -->
         <template id="wrtv_assets_frontend" inherit_id="website_forum.assets_frontend" name="wrtv JS">
             <xpath expr='//script[@src="/website_forum/static/src/js/website_forum.js"]' position="after">
-            <script type="text/javascript" src="/wrtv_config/static/src/js/ShopAddToCartKachel.js"/>
+                <script type="text/javascript" src="/wrtv_config/static/src/js/ShopAddToCartKachel.js"/>
             </xpath>
         </template>
 
@@ -14,123 +14,130 @@
         <!-- HINT: Do NOT enable original desc. and add to cart option -->
         <template id="products_item_wrtv" inherit_id="website_sale.products_item" name="Wrtv Product Description">
             <xpath expr="//div[@itemprop='offers']" position="after">
-            <!-- WRTV Product Description -->
+                <!-- WRTV Product Description -->
                 <div class="text-info oe_subdescription" contenteditable="false">
                     <div itemprop="description" t-field="product.description_sale"></div>
                 </div>
                 <!-- WRTV Quick Add To Cart -->
-               <div class="quick_add_to_cart">
+                <div class="quick_add_to_cart">
                     <input name="product_id" t-att-value="product.product_variant_ids[0].id" type="hidden"/>
                     <t t-if="len(product.product_variant_ids) == 1">
                         <a class="btn btn-default btn-xs fa fa-shopping-cart a-submit">auswählen</a>
                     </t>
                     <t t-if="len(product.product_variant_ids) &gt; 1">
-                        <a class="btn btn-default btn-xs fa fa-shopping-cart" t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']>1 else None))">in Körbchen legen</a>
+                        <a class="btn btn-default btn-xs fa fa-shopping-cart"
+                           t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']>1 else None))">
+                            in Körbchen legen
+                        </a>
                     </t>
                 </div>
             </xpath>
         </template>
 
 
-    <!-- CUSTOM BOOTSTRAP THEME FOR wrtv -->
-    <!-- HINT: http://getbootstrap.com/customize -->
-    <template id="wrtv_theme_option"
-              inherit_id="website.themes" name="wrtv theme option">
-        <xpath expr='//div[@id="themes-list"]' position="inside">
-            <div class="col-md-4">
-                <div class="well text-center">
-                    <div class="image">
-                        <img class="img-responsive" src="/wrtv_config/static/src/img/wrtv_theme_thumbnail.png" alt="wrtv"/>
-                    </div>
-                    <div class="options">
-                        <h3>wrtv</h3>
-                        <p>Wiener Tierschutzverein</p>
-                        <a class="btn btn-info" href="/website/theme_change?theme_id=website.theme_wrtv">Apply</a>
+        <!-- CUSTOM BOOTSTRAP THEME FOR wrtv -->
+        <!-- HINT: http://getbootstrap.com/customize -->
+        <template id="wrtv_theme_option"
+                  inherit_id="website.themes" name="wrtv theme option">
+            <xpath expr='//div[@id="themes-list"]' position="inside">
+                <div class="col-md-4">
+                    <div class="well text-center">
+                        <div class="image">
+                            <img class="img-responsive" src="/wrtv_config/static/src/img/wrtv_theme_thumbnail.png"
+                                 alt="wrtv"/>
+                        </div>
+                        <div class="options">
+                            <h3>wrtv</h3>
+                            <p>Wiener Tierschutzverein</p>
+                            <a class="btn btn-info" href="/website/theme_change?theme_id=website.theme_wrtv">Apply</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </xpath>
-    </template>
-    <!-- wrtv THEME AND CSS -->
-    <template id="website.theme_wrtv" name="wrtv" inherit_id="website.theme" active="True" customize_show="True">
-        <xpath expr="//link[@id='bootstrap_css']" position="replace">
-            <!-- JOES STUFF -->
-            <!-- <link rel='stylesheet' href='/wrtv_config/static/src/css/wrtv_custom_fonts.css' t-ignore="true"/> -->
-            <!--<link rel='stylesheet' href='/wrtv_config/static/src/css/bootstrap_wrtv/css/bootstrap.min.css' t-ignore="true"/> -->
-            <!--<link rel='stylesheet' href='/wrtv_config/static/src/css/bootstrap_wrtv/css/bootstrap-theme.min.css' t-ignore="true"/> -->
-            <!--<link rel='stylesheet' href='/wrtv_config/static/src/css/wrtv.css' t-ignore="true"/>-->
-            <!--<script type="text/javascript" src="/wrtv_config/static/src/js/textreplace.js"/>-->
-            <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Sans" t-ignore="true"/>
-            <!-- BY MIKE -->
-            <link rel='stylesheet' href='/wrtv_config/static/src/css/wrtv_bootstrap/css/bootstrap.css' t-ignore="true"/>
-            <link rel='stylesheet' href='/wrtv_config/static/src/css/wrtv_bootstrap/css/bootstrap-theme.css' t-ignore="true"/>
-            <link rel='stylesheet' href='/wrtv_config/static/src/css/wrtv_01_theme.css' t-ignore="true"/>
-            <link rel='stylesheet' href='/wrtv_config/static/src/css/wrtv_01_theme_buttons.css' t-ignore="true"/>
-            <link rel='stylesheet' href='/wrtv_config/static/src/css/wrtv_02_shop.css' t-ignore="true"/>
-            <link rel='stylesheet' href='/wrtv_config/static/src/css/wrtv_02_shop_categories.css' t-ignore="true"/>
-            <link rel='stylesheet' href='/wrtv_config/static/src/css/wrtv_08_christkindaktion.css' t-ignore="true"/>
-            <link rel='stylesheet' href='/wrtv_config/static/src/css/wrtv_09_glyphicons.css' t-ignore="true"/>
-        </xpath>
-    </template>
-     <template id="wrtv_relauch_custom_css" inherit_id="website.layout" name="wrtv Relauch Custom CSS">
-         <xpath expr="//head" position="inside">
-<!--
-             <t t-if="'wrtv-relaunch-css' in request.httprequest.query_string">
--->
-                 <link rel="stylesheet" href='/wrtv_config/static/src/css/wrtv_relaunch.css'/>
-<!--
-             </t>
--->
-         </xpath>
-     </template>
-   <template id="wrtv_assets_editor" inherit_id="website.assets_editor" name="wrtv Editor assets">
-       <xpath expr="." position="inside">
-           <script type="text/javascript" src="/wrtv_config/static/src/js/wrtv_ckeditor.js"></script>
-       </xpath>
-   </template>
+            </xpath>
+        </template>
+        <!-- wrtv THEME AND CSS -->
+        <template id="website.theme_wrtv" name="wrtv" inherit_id="website.theme" active="True" customize_show="True">
+            <xpath expr="//link[@id='bootstrap_css']" position="replace">
+                <!-- JOES STUFF -->
+                <!-- <link rel='stylesheet' href='/wrtv_config/static/src/css/wrtv_custom_fonts.css' t-ignore="true"/> -->
+                <!--<link rel='stylesheet' href='/wrtv_config/static/src/css/bootstrap_wrtv/css/bootstrap.min.css' t-ignore="true"/> -->
+                <!--<link rel='stylesheet' href='/wrtv_config/static/src/css/bootstrap_wrtv/css/bootstrap-theme.min.css' t-ignore="true"/> -->
+                <!--<link rel='stylesheet' href='/wrtv_config/static/src/css/wrtv.css' t-ignore="true"/>-->
+                <!--<script type="text/javascript" src="/wrtv_config/static/src/js/textreplace.js"/>-->
+                <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Sans"
+                      t-ignore="true"/>
+                <!-- BY MIKE -->
+                <link rel='stylesheet' href='/wrtv_config/static/src/css/wrtv_bootstrap/css/bootstrap.css'
+                      t-ignore="true"/>
+                <link rel='stylesheet' href='/wrtv_config/static/src/css/wrtv_bootstrap/css/bootstrap-theme.css'
+                      t-ignore="true"/>
+                <link rel='stylesheet' href='/wrtv_config/static/src/css/wrtv_01_theme.css' t-ignore="true"/>
+                <link rel='stylesheet' href='/wrtv_config/static/src/css/wrtv_01_theme_buttons.css' t-ignore="true"/>
+                <link rel='stylesheet' href='/wrtv_config/static/src/css/wrtv_02_shop.css' t-ignore="true"/>
+                <link rel='stylesheet' href='/wrtv_config/static/src/css/wrtv_02_shop_categories.css' t-ignore="true"/>
+                <link rel='stylesheet' href='/wrtv_config/static/src/css/wrtv_08_christkindaktion.css' t-ignore="true"/>
+                <link rel='stylesheet' href='/wrtv_config/static/src/css/wrtv_09_glyphicons.css' t-ignore="true"/>
+            </xpath>
+        </template>
+        <template id="wrtv_relauch_custom_css" inherit_id="website.layout" name="wrtv Relauch Custom CSS">
+            <xpath expr="//head" position="inside">
+                <!--
+                             <t t-if="'wrtv-relaunch-css' in request.httprequest.query_string">
+                -->
+                <link rel="stylesheet" href='/wrtv_config/static/src/css/wrtv_relaunch.css'/>
+                <!--
+                             </t>
+                -->
+            </xpath>
+        </template>
+        <template id="wrtv_assets_editor" inherit_id="website.assets_editor" name="wrtv Editor assets">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/wrtv_config/static/src/js/wrtv_ckeditor.js"></script>
+            </xpath>
+        </template>
 
-    <!-- CHECKOUT-STEP-INDICATOR -->
-    <template id="wrtv_wsd_checkout_pages_header" name="wrtv Checkout Steps Regular Buttons"
-              inherit_id="website_sale_donate.wsd_checkout_pages_header" active="True">
-        <!-- Do not Display the Buttons on the right as a navbar to avoid the -15px margin! -->
-        <xpath expr="//div[@class='checkout_steps_buttons nav navbar-right']" position="attributes">
-            <attribute name="class">checkout_steps_buttons</attribute>
-        </xpath>
-    </template>
-
-
-    <!-- PRODUCT PAGE - DONATION TEMPLATE -->
-    <template id="wrtv_ppt_donate" name="PageDonateLayout: Larger Checkoutbox"
-              inherit_id="website_sale_donate.ppt_donate" active="True" customize_show="True">
-
-        <!-- More space for the checkout box and less distance between checkout and description -->
-        <xpath expr="//div[@class='col-sm-7 col-md-7 col-lg-6']" position="attributes">
-            <attribute name="class">col-md-6</attribute>
-        </xpath>
-        <xpath expr="//div[@id='wsd-checkout-box']" position="attributes">
-            <attribute name="class">col-md-6</attribute>
-        </xpath>
-
-    </template>
+        <!-- CHECKOUT-STEP-INDICATOR -->
+        <template id="wrtv_wsd_checkout_pages_header" name="wrtv Checkout Steps Regular Buttons"
+                  inherit_id="website_sale_donate.wsd_checkout_pages_header" active="True">
+            <!-- Do not Display the Buttons on the right as a navbar to avoid the -15px margin! -->
+            <xpath expr="//div[@class='checkout_steps_buttons nav navbar-right']" position="attributes">
+                <attribute name="class">checkout_steps_buttons</attribute>
+            </xpath>
+        </template>
 
 
-    <!-- CHECKOUT PAGE -->
-    <template id="wrtv_wsd_checkout" name="Checkout: Cart on Top"
-              inherit_id="website_sale_donate.wsd_checkout" active="True" customize_show="True">
-        <!-- Full width for the Shopping Cart and the Form -->
-        <xpath expr="//div[@id='wsd_checkout_page_right_column']" position="attributes">
-            <attribute name="class">col-md-12</attribute>
-        </xpath>
-        <xpath expr="//div[@id='wsd_checkout_page_left_column']" position="attributes">
-            <attribute name="class">col-md-12</attribute>
-        </xpath>
-    </template>
+        <!-- PRODUCT PAGE - DONATION TEMPLATE -->
+        <template id="wrtv_ppt_donate" name="PageDonateLayout: Larger Checkoutbox"
+                  inherit_id="website_sale_donate.ppt_donate" active="True" customize_show="True">
 
-    <template id="CKeditor_override_Website_Theme">
-                <!-- Override CKEditor Settings -->
-        <script src='/wrtv_config/static/src/js/wrtv_ckeditor.js' type='text/javascript' t-ignore="true"/>
+            <!-- More space for the checkout box and less distance between checkout and description -->
+            <xpath expr="//div[@class='col-sm-7 col-md-7 col-lg-6']" position="attributes">
+                <attribute name="class">col-md-6</attribute>
+            </xpath>
+            <xpath expr="//div[@id='wsd-checkout-box']" position="attributes">
+                <attribute name="class">col-md-6</attribute>
+            </xpath>
 
-    </template>
+        </template>
+
+
+        <!-- CHECKOUT PAGE -->
+        <template id="wrtv_wsd_checkout" name="Checkout: Cart on Top"
+                  inherit_id="website_sale_donate.wsd_checkout" active="True" customize_show="True">
+            <!-- Full width for the Shopping Cart and the Form -->
+            <xpath expr="//div[@id='wsd_checkout_page_right_column']" position="attributes">
+                <attribute name="class">col-md-12</attribute>
+            </xpath>
+            <xpath expr="//div[@id='wsd_checkout_page_left_column']" position="attributes">
+                <attribute name="class">col-md-12</attribute>
+            </xpath>
+        </template>
+
+        <template id="CKeditor_override_Website_Theme">
+            <!-- Override CKEditor Settings -->
+            <script src='/wrtv_config/static/src/js/wrtv_ckeditor.js' type='text/javascript' t-ignore="true"/>
+
+        </template>
 
     </data>
 </openerp>
