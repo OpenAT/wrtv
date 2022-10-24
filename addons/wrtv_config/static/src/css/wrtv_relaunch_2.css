@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'Isidora';
+  src: url('../fonts/isidora/Isidora-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Isidora';
+  src: url('../fonts/isidora/Isidora/Isidora-Bold.otf');
+  font-weight: bold;
+}
+
+
+
+.price_donate_suggested_currency {
+    display: none;
+}
+
+.price_donate_suggested {
+    font-weight: bold;
+}
+
+.price_donate_suggested, .form-control, .control-label {
+    font-family: Isidora;
+}
+
+.price_donate_suggested {
+    background-color: white;
+    border-color: #E1CA99;
+    border-width: 2px;
+    border-radius: 5px;
+    color: black;
+}
+
+.price_donate_suggested:hover {
+    background-color: white;
+    border-color: #E1CA99;
+    color: black;
+}
+
+.price_donate_suggested:active, .price_donate_suggested:focus, .price_donate_suggested:focus-visible {
+    background-color: #E1CA99 !important;
+    border-color: #E1CA99 !important;
+    color: black;
+    outline: transparent !important;
+}
+
+.price_donate .input-group .input-group-addon:last-of-type  {
+    display: none;
+}
+
+.price_donate .input-group .form-control:not(:first-child):not(:last-child) {
+    border-width: 2px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.price_donate .input-group-addon:first-of-type {
+    border-width: 2px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    line-height: 1.0;
+}
