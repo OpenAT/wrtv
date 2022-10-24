@@ -9,8 +9,6 @@
   font-weight: bold;
 }
 
-
-
 .price_donate_suggested_currency {
     display: none;
 }
@@ -19,7 +17,44 @@
     font-weight: bold;
 }
 
-.price_donate_suggested, .form-control, .control-label {
+#payment_intervals {
+    text-align: left;
+    font-weight: bold;
+}
+
+#payment_intervals label {
+    font-weight: bold;
+}
+
+#payment_intervals > div > div > label > input[type=radio] {
+    accent-color: red;
+    transform: scale(1.5);
+    margin-right: 8px;
+}
+
+/* Price suggestions */
+#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div {
+    float: left;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div {
+    flex-grow: 1;
+}
+
+#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+  #wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div {
+    display: block;
+  }
+}
+
+body, .price_donate_suggested, .form-control, .control-label {
     font-family: Isidora;
 }
 
@@ -59,4 +94,47 @@
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     line-height: 1.0;
+}
+
+div.js_product {
+    display: grid;
+}
+
+h4#payment_intervals {
+    order: -2;
+}
+
+div[itemprop="offers"] {
+    order: -1;
+}
+
+body .oe_website_sale .row .row .col-md-12 {
+  float: none;
+}
+
+.ppt_opc .payment_interval_ids small.payment_interval_info.text-muted {
+    display:none;
+}
+
+#payment_intervals > hr {
+    display: none;
+}
+
+#wsd-checkout-box > div > div > h1 {
+    color: black;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+#wsd-checkout-box > div > div > div.checkoutbox_product_image {
+    display: none;
+}
+
+#description_sale > p {
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    font-weight: bold;
 }
