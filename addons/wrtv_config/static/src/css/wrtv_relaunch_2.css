@@ -9,12 +9,20 @@
   font-weight: bold;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: black;
+}
+
 .price_donate_suggested_currency {
     display: none;
 }
 
 .price_donate_suggested {
     font-weight: bold;
+}
+
+#price_donate {
+    height: 54.66px;
 }
 
 #payment_intervals {
@@ -26,10 +34,16 @@
     font-weight: bold;
 }
 
-#payment_intervals > div > div > label > input[type=radio] {
+div.radio, .f-type-boolean {
+    margin-left: 2.8rem !important;
+    margin-right: 3rem !important;
+}
+
+label > input[type=radio], label > input[type=checkbox] {
     accent-color: red;
     transform: scale(1.5);
     margin-right: 8px;
+    margin-left: -2.5rem !important;
 }
 
 /* Price suggestions */
@@ -145,4 +159,15 @@ body .oe_website_sale .row .row .col-md-12 {
 
 .mandatory {
     color: black !important;
+}
+
+.f-type-boolean label.control-label {
+    font-weight: normal;
+}
+
+#payment_method .acquirer_pre_msg p {
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+    padding-left: 0;
+    padding-right: 0;
 }
