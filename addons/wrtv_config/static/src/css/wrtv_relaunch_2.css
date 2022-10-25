@@ -180,7 +180,7 @@ body .oe_website_sale .row .row .col-md-12 {
 }
 
 ul.nav.nav-tabs::before {
-    content: "Wählen Sie hier Ihre bevorzugte Zahlungsart.";
+    content: "Wählen Sie hier Ihre bevorzugte Zahlungsart:";
     margin-bottom: 2rem;
 }
 
