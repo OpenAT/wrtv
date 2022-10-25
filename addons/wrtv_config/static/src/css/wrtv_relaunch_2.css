@@ -13,6 +13,24 @@ h1, h2, h3, h4, h5, h6 {
     color: black;
 }
 
+.glyphicon-info-sign::before {
+    content: "i";
+    font-family: 'Courier New', monospace;
+    font-weight: extra-bold;
+    font-size: 14px;
+    color: red;
+}
+
+.glyphicon-info-sign, .glyphicon-info-sign:hover {
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 14px;
+    width: 20px;
+    height: 20px;
+}
+
 .price_donate_suggested_currency {
     display: none;
 }
