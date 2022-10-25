@@ -171,3 +171,46 @@ body .oe_website_sale .row .row .col-md-12 {
     padding-left: 0;
     padding-right: 0;
 }
+
+ul.nav.nav-tabs::before {
+    content: "Wählen Sie hier Ihre bevorzugte Zahlungsart.";
+    margin-bottom: 2rem;
+}
+
+/* Payment provider buttons */
+
+.tab-acquirer-name {
+    display: none;
+}
+
+#payment_method ul {
+    border-bottom: 0;
+}
+
+#payment_method .nav.nav-tabs li a,
+#payment_method .nav.nav-tabs li.active a {
+    border-radius: 6px;
+    border: 2px solid #B4B4B4;
+    padding: 1rem;
+    font-weight: bold;
+    margin-right: 1rem;
+    background-color: unset;
+}
+
+#payment_method .nav.nav-tabs li a:hover,
+#payment_method .nav.nav-tabs li.active a:hover {
+    background-color: unset;
+}
+
+#payment_method .nav.nav-tabs li a img,
+#payment_method .nav.nav-tabs li.active a img {
+    width: auto;
+    max-width: unset;
+    height: 100%;
+    max-height: 22px;
+    min-height: 22px;
+}
+
+#payment_method .nav.nav-tabs li.active a {
+    border-color: red;
+}
