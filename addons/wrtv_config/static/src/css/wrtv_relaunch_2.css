@@ -239,3 +239,37 @@ ul.nav.nav-tabs::before {
 #payment_method .nav.nav-tabs li.active a {
     border-color: red;
 }
+
+/* Spendenformular mehrseitig - Spendenbox */
+
+#wsd-checkout-box .panel.panel-default div.form-group.price_donate {
+    padding: 0;
+    width: 100%;
+}
+
+#wsd-checkout-box .panel.panel-default div.form-group.price_donate .input-group {
+    width: 100%;
+}
+
+#wsd-checkout-box .panel.panel-default .payment_interval_info,
+#wsd-checkout-box .panel.panel-default .panel-footer {
+    display: none;
+}
+
+#wsd-checkout-box .panel.panel-default #payment_intervals div.radio {
+    display: inline-block;
+    margin-right: 1rem !important;
+}
+
+#wsd-checkout-box .panel.panel-default {
+    border: 2px solid #B4B4B4;
+    border-radius: 15px;
+}
+
+#wsd-checkout-box .panel.panel-default .btn {
+    font-weight: bold;
+}
+
+div.product_price {
+    margin-top: 0 !important;
+}
