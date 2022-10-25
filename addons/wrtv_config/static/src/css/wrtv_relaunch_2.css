@@ -81,6 +81,12 @@ body, .price_donate_suggested, .form-control, .control-label {
     color: black;
 }
 
+#wsd_checkout_form_inside_row input,
+#wsd_checkout_form_inside_row select {
+    border-radius: 5px;
+    border-width: 2px;
+}
+
 .price_donate_suggested:hover {
     background-color: white;
     border-color: #E1CA99;
