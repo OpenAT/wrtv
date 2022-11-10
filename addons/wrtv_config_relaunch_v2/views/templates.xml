@@ -20,7 +20,8 @@
 
         <!-- Remove Droid Sans Google Font -->
         <template id="website.theme_wrtv_v2" inherit_id="website.theme_wrtv" active="True">
-            <xpath expr="//link[@href='//fonts.googleapis.com/css?family=Droid+Sans']" position="replace">
+            <xpath expr="//link[@href='//fonts.googleapis.com/css?family=Droid+Sans']" position="attributes">
+                <attribute name="t-if">not '/localhost' in request.httprequest.url</attribute>
             </xpath>
         </template>
     </data>
