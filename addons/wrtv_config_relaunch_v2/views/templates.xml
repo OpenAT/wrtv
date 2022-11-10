@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <template id="wrtv_relauch_v2_custom_css" inherit_id="wrtv_config.wrtv_relauch_custom_css" name="wrtv Relauch v2 Custom CSS">
+            <xpath expr="//link[@href='/wrtv_config/static/src/css/wrtv_relaunch.css']" position="after">
+
+                <t t-if="'/localhost' in request.httprequest.url">
+                    <link rel="stylesheet" href='/wrtv_config_relaunch_v2/static/src/css/wrtv_relaunch_2.css'/>
+                </t>
+
+            </xpath>
+        </template>
+
+        <template id="wrtv_relaunch_2_checkoutbox" inherit_id="website_sale_donate.checkoutbox">
+            <xpath expr="//t[@t-set='payment_interval_as_selection']" position="replace">
+                <t t-set="payment_interval_as_selection" t-value="True if (product.payment_interval_as_selection) else False"/>
+            </xpath>
+        </template>
+
+        <!-- Remove Droid Sans Google Font -->
+        <template id="website.theme_wrtv_v2" inherit_id="website.theme_wrtv" active="True">
+            <xpath expr="//link[@href='//fonts.googleapis.com/css?family=Droid+Sans']" position="replace">
+            </xpath>
+        </template>
+    </data>
+</openerp>

@@ -88,17 +88,6 @@
                 <!--
                              </t>
                 -->
-                <!-- 'localhost:8069' wird später z.B.: 'shop2.tierschutzverein.at' -->
-                <t t-if="'/localhost' in request.httprequest.url">
-                    <link rel="stylesheet" href='/wrtv_config/static/src/css/wrtv_relaunch_2.css'/>
-                </t>
-
-            </xpath>
-        </template>
-
-        <template id="wrtv_relaunch_2_checkoutbox" inherit_id="website_sale_donate.checkoutbox">
-            <xpath expr="//t[@t-set='payment_interval_as_selection']" position="replace">
-                <t t-set="payment_interval_as_selection" t-value="True if (product.payment_interval_as_selection) else False"/>
             </xpath>
         </template>
 
