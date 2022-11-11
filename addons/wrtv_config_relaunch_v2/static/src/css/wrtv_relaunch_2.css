@@ -1,0 +1,271 @@
+@font-face {
+  font-family: 'Isidora';
+  src: url('../fonts/isidora/Isidora-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Isidora';
+  src: url('../fonts/isidora/Isidora/Isidora-Bold.otf');
+  font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: black;
+}
+
+.glyphicon-info-sign::before {
+    content: "i";
+    font-family: 'Courier New', monospace;
+    font-weight: extra-bold;
+    font-size: 14px;
+    color: red;
+}
+
+.glyphicon-info-sign, .glyphicon-info-sign:hover {
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 14px;
+    width: 20px;
+    height: 20px;
+}
+
+.price_donate_suggested_currency {
+    display: none;
+}
+
+.price_donate_suggested {
+    font-weight: bold;
+}
+
+#price_donate {
+    height: 54.66px;
+    color: black;
+}
+
+#payment_intervals {
+    text-align: left;
+    font-weight: bold;
+}
+
+#payment_intervals label {
+    font-weight: bold;
+}
+
+div.radio, .f-type-boolean {
+    margin-left: 2.8rem !important;
+    margin-right: 3rem !important;
+}
+
+label > input[type=radio], label > input[type=checkbox] {
+    accent-color: red;
+    transform: scale(1.5);
+    margin-right: 8px;
+    margin-left: -2.5rem !important;
+}
+
+/* Price suggestions */
+#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div {
+    float: left;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div {
+    flex-grow: 1;
+}
+
+#wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div > div > div {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+  #wsd_checkout_form > div > div.product_price.mt16 > h4.oe_price_h4.css_editable_mode_hidden.decimal_precision > div {
+    display: block;
+  }
+}
+
+body, .price_donate_suggested, .form-control, .control-label {
+    font-family: Isidora;
+}
+
+.price_donate_suggested {
+    background-color: white;
+    border-color: #E1CA99;
+    border-width: 2px;
+    border-radius: 5px;
+    color: black;
+}
+
+#wsd_checkout_form_inside_row input,
+#wsd_checkout_form_inside_row select {
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+.price_donate_suggested:hover {
+    background-color: white;
+    border-color: #E1CA99;
+    color: black;
+}
+
+.price_donate_suggested:active, .price_donate_suggested:focus, .price_donate_suggested:focus-visible {
+    background-color: #E1CA99 !important;
+    border-color: #E1CA99 !important;
+    color: black;
+    outline: transparent !important;
+}
+
+.price_donate .input-group .input-group-addon:last-of-type  {
+    display: none;
+}
+
+.price_donate .input-group .form-control:not(:first-child):not(:last-child) {
+    border-width: 2px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.price_donate .input-group-addon:first-of-type {
+    border-width: 2px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    line-height: 1.0;
+}
+
+div.js_product {
+    display: grid;
+}
+
+h4#payment_intervals {
+    order: -2;
+}
+
+#wsd_checkout_form > div > h3 {
+    display: none;
+}
+
+div[itemprop="offers"] {
+    order: -1;
+}
+
+body .oe_website_sale .row .row .col-md-12 {
+  float: none;
+}
+
+.ppt_opc .payment_interval_ids small.payment_interval_info.text-muted {
+    display:none;
+}
+
+#payment_intervals > hr {
+    display: none;
+}
+
+#wsd-checkout-box > div > div > h1 {
+    color: black;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+#description_sale > p {
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    font-weight: bold;
+}
+
+.mandatory {
+    color: black !important;
+}
+
+.f-type-boolean label.control-label {
+    font-weight: normal;
+}
+
+#payment_method .acquirer_pre_msg p {
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+ul.nav.nav-tabs::before {
+    content: "Wählen Sie hier Ihre bevorzugte Zahlungsart:";
+    margin-bottom: 2rem;
+}
+
+/* Payment provider buttons */
+
+.tab-acquirer-name {
+    display: none;
+}
+
+#payment_method ul {
+    border-bottom: 0;
+}
+
+#payment_method .nav.nav-tabs li a,
+#payment_method .nav.nav-tabs li.active a {
+    border-radius: 6px;
+    border: 2px solid #B4B4B4;
+    padding: 1rem;
+    font-weight: bold;
+    margin-right: 1rem;
+    background-color: unset;
+}
+
+#payment_method .nav.nav-tabs li a:hover,
+#payment_method .nav.nav-tabs li.active a:hover {
+    background-color: unset;
+}
+
+#payment_method .nav.nav-tabs li a img,
+#payment_method .nav.nav-tabs li.active a img {
+    width: auto;
+    max-width: unset;
+    height: 100%;
+    max-height: 22px;
+    min-height: 22px;
+}
+
+#payment_method .nav.nav-tabs li.active a {
+    border-color: red;
+}
+
+/* Spendenformular mehrseitig - Spendenbox */
+
+#wsd-checkout-box .panel.panel-default div.form-group.price_donate {
+    padding: 0;
+    width: 100%;
+}
+
+#wsd-checkout-box .panel.panel-default div.form-group.price_donate .input-group {
+    width: 100%;
+}
+
+#wsd-checkout-box .panel.panel-default .payment_interval_info,
+#wsd-checkout-box .panel.panel-default .panel-footer {
+    display: none;
+}
+
+#wsd-checkout-box .panel.panel-default #payment_intervals div.radio {
+    display: inline-block;
+    margin-right: 1rem !important;
+}
+
+#wsd-checkout-box .panel.panel-default {
+    border: 2px solid #B4B4B4;
+    border-radius: 15px;
+}
+
+#wsd-checkout-box .panel.panel-default .btn {
+    font-weight: bold;
+}
+
+div.product_price {
+    margin-top: 0 !important;
+}
