@@ -5,9 +5,7 @@
         <template id="wrtv_relauch_v2_custom_css" inherit_id="wrtv_config.wrtv_relauch_custom_css" name="wrtv Relauch v2 Custom CSS">
             <xpath expr="//link[@href='/wrtv_config/static/src/css/wrtv_relaunch.css']" position="after">
 
-                <t t-if="'spenden2.tierschutz-austria.at' in request.httprequest.url or 'localhost' in request.httprequest.url">
-                    <link rel="stylesheet" href='/wrtv_config_relaunch_v2/static/src/css/wrtv_relaunch_2.css'/>
-                </t>
+                <link rel="stylesheet" href='/wrtv_config_relaunch_v2/static/src/css/wrtv_relaunch_2.css'/>
 
             </xpath>
         </template>
