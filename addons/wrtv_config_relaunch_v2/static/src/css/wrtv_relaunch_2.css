@@ -13,6 +13,18 @@ h1, h2, h3, h4, h5, h6 {
     color: black;
 }
 
+.panel .panel-body h1 {
+    font-size: 32px !important;
+    word-break: break-word;
+}
+
+@media screen and (max-width: 600px) {
+    .panel .panel-body h1 {
+        font-size: 24px !important;
+        word-break: break-word;
+    }
+}
+
 .glyphicon-info-sign::before {
     content: "i";
     font-family: 'Courier New', monospace;
