@@ -13,18 +13,6 @@ h1, h2, h3, h4, h5, h6 {
     color: black;
 }
 
-.panel .panel-body h1 {
-    font-size: 32px !important;
-    word-break: break-word;
-}
-
-@media screen and (max-width: 600px) {
-    .panel .panel-body h1 {
-        font-size: 24px !important;
-        word-break: break-word;
-    }
-}
-
 .glyphicon-info-sign::before {
     content: "i";
     font-family: 'Courier New', monospace;
@@ -176,11 +164,24 @@ body .oe_website_sale .row .row .col-md-12 {
 }
 
 #wsd-checkout-box > div > div > h1 {
+    word-break: break-word;
     color: black;
     text-transform: uppercase;
     text-align: left;
-    font-size: 48px;
+    font-size: 32px;
     margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    #wsd-checkout-box > div > div > h1 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #wsd-checkout-box > div > div > h1 {
+        font-size: 20px;
+    }
 }
 
 #description_sale > p {
