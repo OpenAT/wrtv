@@ -334,3 +334,8 @@ div.product_price {
 #description_sale > p {
     font-size: 16px !important;
 }
+
+#product_desc_short > section {
+    border-radius: 16px;
+    box-shadow: -38px 62px 29px rgba(120, 120, 120, 0.01), -21px 35px 24px rgba(120, 120, 120, 0.05), -9px 15px 18px rgba(120, 120, 120, 0.09), -2px 4px 10px rgba(120, 120, 120, 0.1), 0px 0px 0px rgba(120, 120, 120, 0.1);
+}
