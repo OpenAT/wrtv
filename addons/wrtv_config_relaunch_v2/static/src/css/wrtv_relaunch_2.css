@@ -322,3 +322,15 @@ div.product_price {
 #wsd_checkout_form .product_price span {
     font-weight: bold;
 }
+
+.ppt_opc #wsd-checkout-box img.img.img-responsive.img-circle.product-image.product_detail_img {
+    border: 0px solid transparent;
+}
+
+#description_sale::before {
+    font-size: 20px;
+}
+
+#description_sale > p {
+    font-size: 16px !important;
+}
