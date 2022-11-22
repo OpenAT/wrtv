@@ -100,12 +100,19 @@ body, .price_donate_suggested, .form-control, .control-label {
 }
 
 #fsoforms_submit_button,
+#add_to_cart,
+#wsd_checkout_form_submit_button,
+.wsd_button_back_to_page,
+.checkout_steps_buttons .btn,
+.wsd_button_opc_logout,
+#fsoforms_submit_button,
 #subscription_form input,
 #subscription_form select,
 #wsd_checkout_form_inside_row input,
 #wsd_checkout_form_inside_row select {
     border-radius: 5px;
     border-width: 2px;
+    font-weight: bold;
 }
 
 .price_donate_suggested:hover {
@@ -310,11 +317,6 @@ div.product_price {
     #add_to_cart {
         font-size: 16px;
     }
-}
-
-#fsoforms_submit_button, #add_to_cart, #wsd_checkout_form_submit_button,
-.wsd_button_back_to_page {
-    font-weight: bold;
 }
 
 #wsd_checkout_form .product_price span {
