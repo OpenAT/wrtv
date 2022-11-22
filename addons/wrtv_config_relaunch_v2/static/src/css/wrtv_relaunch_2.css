@@ -99,6 +99,8 @@ body, .price_donate_suggested, .form-control, .control-label {
     color: black;
 }
 
+#subscription_form input,
+#subscription_form select,
 #wsd_checkout_form_inside_row input,
 #wsd_checkout_form_inside_row select {
     border-radius: 5px;
@@ -126,6 +128,26 @@ body, .price_donate_suggested, .form-control, .control-label {
     border-width: 2px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+
+.form-control {
+    height: 40px;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    border: 2px solid #5073A0;
+    box-shadow: none;
+}
+
+.has-error .form-control {
+    border-color: #DC0000;
+    box-shadow: none;
+}
+
+.has-error .form-control:focus {
+    border-color: #5073A0;
+    box-shadow: none;
 }
 
 .price_donate .input-group-addon:first-of-type {
