@@ -18,12 +18,12 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Courier New', monospace;
     font-weight: extra-bold;
     font-size: 14px;
-    color: red;
+    color: #DC0000;
 }
 
 .glyphicon-info-sign, .glyphicon-info-sign:hover {
     background-color: white;
-    border: 2px solid red;
+    border: 2px solid #DC0000;
     border-radius: 10px;
     text-align: center;
     line-height: 14px;
@@ -59,7 +59,7 @@ div.radio, .f-type-boolean {
 }
 
 label > input[type=radio], label > input[type=checkbox] {
-    accent-color: red;
+    accent-color: #DC0000;
     transform: scale(1.5);
     margin-right: 8px;
     margin-left: -2.5rem !important;
@@ -99,6 +99,7 @@ body, .price_donate_suggested, .form-control, .control-label {
     color: black;
 }
 
+#fsoforms_submit_button,
 #subscription_form input,
 #subscription_form select,
 #wsd_checkout_form_inside_row input,
@@ -268,7 +269,7 @@ ul.nav.nav-tabs::before {
 }
 
 #payment_method .nav.nav-tabs li.active a {
-    border-color: red;
+    border-color: #DC0000;
 }
 
 /* Spendenformular mehrseitig - Spendenbox */
@@ -309,4 +310,13 @@ div.product_price {
     #add_to_cart {
         font-size: 16px;
     }
+}
+
+#fsoforms_submit_button, #add_to_cart, #wsd_checkout_form_submit_button,
+.wsd_button_back_to_page {
+    font-weight: bold;
+}
+
+#wsd_checkout_form .product_price span {
+    font-weight: bold;
 }
