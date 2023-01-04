@@ -341,3 +341,21 @@ div.product_price {
     border-radius: 16px;
     box-shadow: -38px 62px 29px rgba(120, 120, 120, 0.01), -21px 35px 24px rgba(120, 120, 120, 0.05), -9px 15px 18px rgba(120, 120, 120, 0.09), -2px 4px 10px rgba(120, 120, 120, 0.1), 0px 0px 0px rgba(120, 120, 120, 0.1);
 }
+
+/* Custom select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url(/wrtv_config_relaunch_v2/static/src/img/arrow-icon-dropdown.svg) !important;
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 4px);
+  background-position-y: 50%;
+  background-size: 16px 16px;
+  padding-right: 2.2rem;
+}
+
+#wsd_checkout_form select ~ .glyphicon.form-control-feedback {
+    top: 30px;
+    right: 30px;
+}
