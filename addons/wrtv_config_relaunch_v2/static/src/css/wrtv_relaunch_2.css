@@ -117,6 +117,10 @@ body, .price_donate_suggested, .form-control, .control-label {
     font-weight: bold;
 }
 
+body[data-on-shop-page=True]  #wsd_checkout_form > div.clearfix.wsd_cfi_buttons > a.wsd_button_back_to_page.btn.btn-default {
+    display: none;
+}
+
 .price_donate_suggested:hover {
     background-color: white;
     border-color: #E1CA99;
@@ -358,4 +362,14 @@ select {
 #wsd_checkout_form select ~ .glyphicon.form-control-feedback {
     top: 30px;
     right: 30px;
+}
+
+/* Shop images no finger cursor */
+#products_grid .oe_product_image a {
+    cursor: default;
+}
+
+/* payment method cut button fix */
+#payment_method .tab-pane > div:not(.acquirer_pre_msg) {
+  padding-bottom: 2rem;
 }
