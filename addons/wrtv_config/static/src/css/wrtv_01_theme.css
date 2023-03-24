@@ -77,3 +77,9 @@ body .oe_blue {
     background-color: #35477a !important;
     color: white;
 }
+label.control-label.mandatory.text-danger {
+    color: #c30000;
+}
+label.control-label.mandatory.text-danger:after {
+    content: " *";
+}
