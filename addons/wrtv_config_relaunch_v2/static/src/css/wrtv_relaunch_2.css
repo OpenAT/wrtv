@@ -185,6 +185,11 @@ h4#payment_intervals {
 
 div[itemprop="offers"] {
     order: -1;
+    overflow: hidden;
+}
+
+div[itemprop="offers"] input[type="button"] {
+    white-space: normal;
 }
 
 body .oe_website_sale .row .row .col-md-12 {
