@@ -188,7 +188,7 @@ div[itemprop="offers"] {
     overflow: hidden;
 }
 
-div[itemprop="offers"] input[type="button"] {
+div[itemprop="offers"] input[type="button"], #add_to_cart {
     white-space: normal;
 }
 
