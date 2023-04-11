@@ -141,5 +141,21 @@
 
         </template>
 
+        <template id="theme_wrtv_matomo_tag_manager" name="WRTV Matomo Tag Manager" inherit_id="website.layout">
+            <xpath expr="//head" position="inside">
+                <t t-set='matomo_snippet'>
+                    <![CDATA[
+                    <!-- Matomo Tag Manager -->
+                    <script>
+                    var _mtm = window._mtm = window._mtm || [];
+                    _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'}); var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                    g.async=true; g.src='https://stats.tierschutz-austria.at/js/container_ajZJDoyi.js'; s.parentNode.insertBefore(g,s); </script>
+                    <!-- End Matomo Tag Manager -->
+                    ]]>
+                </t>
+                <t t-raw="matomo_snippet" />
+            </xpath>
+        </template>
+
     </data>
 </openerp>
