@@ -192,6 +192,12 @@ div[itemprop="offers"] input[type="button"], #add_to_cart {
     white-space: normal;
 }
 
+@media screen and (max-width: 350px) {
+    div[itemprop="offers"] input[type="button"], #add_to_cart {
+        font-size: 18px !important;
+    }
+}
+
 body .oe_website_sale .row .row .col-md-12 {
   float: none;
 }
