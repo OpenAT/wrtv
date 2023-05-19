@@ -111,10 +111,15 @@ body, .price_donate_suggested, .form-control, .control-label {
 #subscription_form input,
 #subscription_form select,
 #wsd_checkout_form_inside_row input,
-#wsd_checkout_form_inside_row select {
+#wsd_checkout_form_inside_row select,
+form.js_surveyform button {
     border-radius: 5px;
     border-width: 2px;
     font-weight: bold;
+}
+
+form.js_surveyform button {
+    font-size: 23px;
 }
 
 body[data-on-shop-page=True]  #wsd_checkout_form > div.clearfix.wsd_cfi_buttons > a.wsd_button_back_to_page.btn.btn-default {
