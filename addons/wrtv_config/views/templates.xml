@@ -157,5 +157,15 @@
             </xpath>
         </template>
 
+        <template name="WRTV custom survey page" id="wrtv_survey_page" inherit_id="survey.page">
+            <!-- Remove page header -->
+            <xpath expr="//div[@class='page-header']" position="replace">
+            </xpath>
+
+            <!-- Add class btn-lg to survey submitm button -->
+            <xpath expr="//button[@name='button_submit' and @value='finish']" position="replace">
+                <button t-if="last" type="submit" class="btn btn-primary btn-lg pull-left" name="button_submit" value="finish">Submit survey</button>
+            </xpath>
+        </template>
     </data>
 </openerp>

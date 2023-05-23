@@ -118,10 +118,6 @@ form.js_surveyform button {
     font-weight: bold;
 }
 
-form.js_surveyform button {
-    font-size: 23px;
-}
-
 body[data-on-shop-page=True]  #wsd_checkout_form > div.clearfix.wsd_cfi_buttons > a.wsd_button_back_to_page.btn.btn-default {
     display: none;
 }
