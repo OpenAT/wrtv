@@ -71,12 +71,14 @@ class WebsiteConfirm(openerp.addons.web.controllers.main.Home):
 
     @staticmethod
     def matomo_ecommerce_track(order_id, amount):
-        site_id = 1
-        request = DummyRequest()
+        site_id = request.website.matomo_site_id
+        api_key = request.website.matomo_api_key
+        dummyRequest = DummyRequest()
         api_url = "https://stats.tierschutz-austria.at/js/container_ajZJDoyi.js"
 
-        tracker = PiwikTrackerEcommerce(site_id, request)
-        # tracker.set_token_auth()
+        tracker = PiwikTrackerEcommerce(site_id, dummyRequest)
+        tracker.set_token_auth(api_key)
         tracker.set_api_url(api_url)
+
         tracker.do_track_ecommerce_order(order_id=order_id, grand_total=amount)
         logger.info("MATOMO: do_track_ecommerce_order(order_id=%s, grand_total=%s) success!" % (order_id, amount))

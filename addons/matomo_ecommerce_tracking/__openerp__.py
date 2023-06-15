@@ -11,7 +11,9 @@
     'installable': True,
     'depends': [
         'website',
+        'fso_base_website',
     ],
     'data': [
+        'views/website_view.xml'
     ],
 }
