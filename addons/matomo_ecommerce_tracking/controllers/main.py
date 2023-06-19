@@ -74,7 +74,7 @@ class WebsiteConfirm(openerp.addons.web.controllers.main.Home):
         site_id = request.website.matomo_site_id
         api_key = request.website.matomo_api_key
         dummyRequest = DummyRequest()
-        api_url = "https://stats.tierschutz-austria.at/js/container_ajZJDoyi.js"
+        api_url = "https://stats.tierschutz-austria.at/matomo.php"
 
         tracker = PiwikTrackerEcommerce(site_id, dummyRequest)
         tracker.set_token_auth(api_key)
