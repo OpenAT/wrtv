@@ -385,3 +385,9 @@ select {
 #payment_method .tab-pane > div:not(.acquirer_pre_msg) {
   padding-bottom: 2rem;
 }
+
+/* Fix survey radio and checkbox inputs for smaller displays */
+.js_surveyform label > input[type=radio],
+.js_surveyform label > input[type=checkbox] {
+  margin-left: 0px !important;
+}
