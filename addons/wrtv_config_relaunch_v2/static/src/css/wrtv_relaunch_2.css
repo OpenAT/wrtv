@@ -391,3 +391,9 @@ select {
 .js_surveyform label > input[type=checkbox] {
   margin-left: 0px !important;
 }
+
+/* Survey buttons should word-wrap and break words on tiny screens */
+.js_surveyform button[type=submit] {
+  text-wrap: wrap;
+  word-break: break-word;
+}
