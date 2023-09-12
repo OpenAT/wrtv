@@ -394,6 +394,6 @@ select {
 
 /* Survey buttons should word-wrap and break words on tiny screens */
 .js_surveyform button[type=submit] {
-  text-wrap: wrap;
+  white-space: break-spaces;
   word-break: break-word;
 }
