@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <template id="website_layout_matomo_ecommerce" name="WRTV Matomo Ecommerce Tracking" inherit_id="website.layout">
+            <xpath expr="//body" position="inside">
+                <t t-if="'/confirm/' in request.httprequest.url and 'order_id=' in request.httprequest.url">
+                    <script t-if="payment_confirmation">
+                        document.addEventListener("DOMContentLoaded", function() {
+                            var intervalId = setInterval(function() {
+                                if (typeof _paq !== 'undefined') {
+                                    console.log("_paq ready.");
+                                    clearInterval(intervalId);
+                                <t t-foreach="payment_confirmation['order_items']" t-as="order_item">
+                                    _paq.push([ 'addEcommerceItem', '<t t-esc="order_item['product_id']" />', '<t t-esc="order_item['name']" />', '<t t-esc="order_item['category']" />', <t t-esc="order_item['price']" />, <t t-esc="order_item['quantity']" /> ]);
+                                </t>
+                                } else {
+                                    console.log("_paq not ready.");
+                                }
+                            }, 250);
+                        });
+                    </script>
+                </t>
+            </xpath>
+        </template>
+
+    </data>
+</openerp>

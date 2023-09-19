@@ -12,8 +12,10 @@
     'depends': [
         'website',
         'fso_base_website',
+        'wrtv_config',
     ],
     'data': [
-        'views/website_view.xml'
+        'views/website_view.xml',
+        'views/templates.xml',
     ],
 }

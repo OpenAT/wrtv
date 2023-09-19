@@ -57,28 +57,33 @@ class WebsiteConfirm(openerp.addons.web.controllers.main.Home):
         if order_id:
             order_pool = request.registry.get('sale.order')
             payment_pool = request.registry.get('payment.transaction')
+            line_pool = request.registry.get('sale.order.line')
+
             order = order_pool.search_read(request.cr, SUPERUSER_ID, [('id', '=', order_id)])
             payment_id = order[0]["payment_tx_id"][0]
             payment = payment_pool.search_read(request.cr, SUPERUSER_ID, [('id', '=', payment_id)])
             payment_state = payment[0]["state"]
             amount_total = order[0]["amount_total"]
 
+            lines = line_pool.search_read(request.cr, SUPERUSER_ID, [('id', 'in', order[0]["order_line"])])
+
             if payment_state in ["done", "pending"]:
                 logger.info("CONFIRM: order_id: %s with amount_total: %s" % (order_id, amount_total))
-                WebsiteConfirm.matomo_ecommerce_track(order_id, amount_total)
+
+                payment_confirmation_data = {
+                    "order_id": order_id,
+                    "amount_total": amount_total,
+                    "order_items": [
+                        {
+                            "id": line["id"],
+                            "product_id": line["product_id"][0],
+                            "name": line["name"],
+                            "category": lines[0]['cat_id'][1] if lines[0]['cat_id'] else "",
+                            "quantity": int(line["product_uos_qty"]),
+                            "price": line["price_donate"],
+                        } for line in lines
+                    ],
+                }
+                values["payment_confirmation"] = payment_confirmation_data
 
         return request.render(page, values)
-
-    @staticmethod
-    def matomo_ecommerce_track(order_id, amount):
-        site_id = request.website.matomo_site_id
-        api_key = request.website.matomo_api_key
-        dummyRequest = DummyRequest()
-        api_url = "https://stats.tierschutz-austria.at/matomo.php"
-
-        tracker = PiwikTrackerEcommerce(site_id, dummyRequest)
-        tracker.set_token_auth(api_key)
-        tracker.set_api_url(api_url)
-
-        tracker.do_track_ecommerce_order(order_id=order_id, grand_total=amount)
-        logger.info("MATOMO: do_track_ecommerce_order(order_id=%s, grand_total=%s) success!" % (order_id, amount))
