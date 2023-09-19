@@ -8,14 +8,15 @@
                     <script t-if="payment_confirmation">
                         document.addEventListener("DOMContentLoaded", function() {
                             var intervalId = setInterval(function() {
-                                if (typeof _paq !== 'undefined') {
-                                    console.log("_paq ready.");
+                                if (Matomo.initialized) {
+                                    console.log("ECT ready.");
                                     clearInterval(intervalId);
+                                    const tracker = Matomo.getTracker("https://stats.tierschutz-austria.at/matomo.php", 1);
                                 <t t-foreach="payment_confirmation['order_items']" t-as="order_item">
-                                    _paq.push([ 'addEcommerceItem', '<t t-esc="order_item['product_id']" />', '<t t-esc="order_item['name']" />', '<t t-esc="order_item['category']" />', <t t-esc="order_item['price']" />, <t t-esc="order_item['quantity']" /> ]);
+                                    tracker.addEcommerceItem('<t t-esc="order_item['product_id']" />', '<t t-esc="order_item['name']" />', '<t t-esc="order_item['category']" />', <t t-esc="order_item['price']" />, <t t-esc="order_item['quantity']" />);
                                 </t>
                                 } else {
-                                    console.log("_paq not ready.");
+                                    console.log("ECT not ready.");
                                 }
                             }, 250);
                         });
