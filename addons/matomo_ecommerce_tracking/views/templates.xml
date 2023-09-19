@@ -15,6 +15,7 @@
                                 <t t-foreach="payment_confirmation['order_items']" t-as="order_item">
                                     tracker.addEcommerceItem('<t t-esc="order_item['product_id']" />', '<t t-esc="order_item['name']" />', '<t t-esc="order_item['category']" />', <t t-esc="order_item['price']" />, <t t-esc="order_item['quantity']" />);
                                 </t>
+                                    tracker.trackEcommerceOrder(<t t-esc="payment_confirmation['order_id']" />, <t t-esc="payment_confirmation['amount_total']" />);
                                 } else {
                                     console.log("ECT not ready.");
                                 }
