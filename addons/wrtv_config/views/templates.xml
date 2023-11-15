@@ -6,6 +6,8 @@
         <template id="wrtv_assets_frontend" inherit_id="website_forum.assets_frontend" name="wrtv JS">
             <xpath expr='//script[@src="/website_forum/static/src/js/website_forum.js"]' position="after">
                 <script type="text/javascript" src="/wrtv_config/static/src/js/ShopAddToCartKachel.js"/>
+                <!-- When clicking on shop links, scroll parent to top via iFrameResizer -->
+                <script type="text/javascript" src="/wrtv_config/static/src/js/parent-scroll-top.js"/>
             </xpath>
         </template>
 
