@@ -35,20 +35,36 @@ waitForIframeResizer();
 
 function setupLinks() {
     try {
-        document.querySelectorAll('.oe_website_sale a[itemprop="url"]').forEach(function (link) {
-            if (debug) {
-                console.log('parent-scroll-top, attaching to link:' + link.href);
-            }
-            link.addEventListener('click', function(event) {
-                if (debug) {
-                    console.info('parent-scroll-top: link clicked, scrolling!');
-                }
-                window.parentIFrame.scrollTo(0,0);
-            });
-        });
+        // Product image link
+        document
+            .querySelectorAll('.oe_website_sale .oe_product a[itemprop="url"]')
+            .forEach(setupLink);
+
+        // Product name link
+        document
+            .querySelectorAll('.oe_website_sale .oe_product a[itemprop="name"]')
+            .forEach(setupLink);
+
+        // Product add to cart button
+        document
+            .querySelectorAll('.oe_website_sale .oe_product .quick_add_to_cart a')
+            .forEach(setupLink);
+
     } catch(error) {
         if (debug) {
             console.info('parent-scroll-top: ' + error);
         }
     }
+}
+
+function setupLink(link) {
+    if (debug) {
+        console.log('parent-scroll-top, attaching to link:' + link.href);
+    }
+    link.addEventListener('click', function(event) {
+        if (debug) {
+            console.info('parent-scroll-top: link clicked, scrolling!');
+        }
+        window.parentIFrame.scrollTo(0,0);
+    });
 }
