@@ -49,20 +49,19 @@ function setupLinks() {
 function setupProduct(product) {
     const quickAddToCart = product.querySelectorAll('quick_add_to_cart');
 
-    if (!quickAddToCart) {
+    if (quickAddToCart.length === 0) {
+        if (debug) {
+            console.log("parent-scroll-top: setting up product links");
+        }
+
         // Product image link
-        quickAddToCart
+        product
             .querySelectorAll('.oe_website_sale .oe_product a[itemprop="url"]')
             .forEach(setupLink);
 
         // Product name link
-        quickAddToCart
+        product
             .querySelectorAll('.oe_website_sale .oe_product a[itemprop="name"]')
-            .forEach(setupLink);
-
-        // Product add to cart button
-        quickAddToCart
-            .querySelectorAll('.oe_website_sale .oe_product .quick_add_to_cart a')
             .forEach(setupLink);
     }
 }
