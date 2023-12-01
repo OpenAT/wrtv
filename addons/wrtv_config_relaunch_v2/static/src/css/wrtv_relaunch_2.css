@@ -397,3 +397,13 @@ select {
   white-space: break-spaces;
   word-break: break-word;
 }
+
+/* Make donation inputs with primary button white */
+#price_donate.btn-primary {
+    background-color: transparent;
+    border: 2px solid #cccccc;
+}
+
+#price_donate.btn-primary:focus {
+  border-color: #5073A0;
+}
