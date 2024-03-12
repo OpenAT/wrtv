@@ -84,7 +84,7 @@ class WebsiteConfirm(openerp.addons.web.controllers.main.Home):
 
     @staticmethod
     def js_escape(value):
-        sanitized_string = re.sub(r'[^a-zA-Z0-9äöüÄÖÜß\(\)\[\]\{\}\-_\+&„\"\'\.,;\|\%\/\s]', '', value)
+        sanitized_string = re.sub(ur'[^a-zA-Z0-9äöüÄÖÜß\(\)\[\]\{\}\-_\+&„\"\'\.,;\|\%\/\s]', '', value)
         sanitized_string = sanitized_string \
             .replace("'", "\\'")
         return sanitized_string
