@@ -71,7 +71,7 @@ class WebsiteConfirm(openerp.addons.web.controllers.main.Home):
                         {
                             "id": line["id"],
                             "product_id": line["product_id"][0],
-                            "name": WebsiteConfirm.js_escape(line["name"]),
+                            "name": line["name"],
                             "category": lines[0]['cat_id'][1] if lines[0]['cat_id'] else "",
                             "quantity": int(line["product_uos_qty"]),
                             "price": line["price_donate"],
@@ -81,10 +81,3 @@ class WebsiteConfirm(openerp.addons.web.controllers.main.Home):
                 values["payment_confirmation"] = payment_confirmation_data
 
         return request.render(page, values)
-
-    @staticmethod
-    def js_escape(value):
-        sanitized_string = re.sub(ur'[^a-zA-Z0-9äöüÄÖÜß\(\)\[\]\{\}\-_\+&„\"\'\.,;\|\%\/\s]', '', value)
-        sanitized_string = sanitized_string \
-            .replace("'", "\\'")
-        return sanitized_string
