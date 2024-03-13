@@ -24,7 +24,7 @@
                                 if (Matomo.initialized) {
                                     console.log("ECT ready.");
                                     clearInterval(intervalId);
-                                    const tracker = Matomo.getTracker("http://localhost:8082/matomo.php", 1);
+                                    const tracker = Matomo.getTracker("https://stats.tierschutz-austria.at/matomo.php", 1);
                                     var product_name = '';
                                 <t t-foreach="payment_confirmation['order_items']" t-as="order_item">
                                     product_name = document.getElementById('<t t-esc="'product_name_' + str(order_item['product_id'])" />').value;
